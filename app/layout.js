@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html data-theme="light" lang="en">
       <body className={`${inter.variable} antialiased bg-white interFont`}>
         <Navbar />
-        <main className="pt-11">{children}</main>
+        <main className="pt-12">{children}</main>
         <Footer />
       </body>
     </html>
