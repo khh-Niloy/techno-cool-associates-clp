@@ -15,16 +15,16 @@ export default function Navbar() {
 
   const currentStatusColorStyle = {
     active:
-      "text-white font-medium bg-purple-700 underline rounded lg:bg-transparent lg:text-white lg:p-0",
+      "text-white font-medium bg-purple-700 underline rounded lg:bg-transparent lg:text-black lg:p-0",
     inactive:
-      "text-white border-b border-gray-100 hover:bg-gray-50 font-normal lg:hover:bg-transparent lg:border-0 lg:p-0",
+      "text-black border-b border-gray-100 hover:bg-gray-50 font-normal lg:hover:bg-transparent lg:border-0 lg:p-0",
   };
 
   const renderedNavItems = navItems.map(({ item, link }) => (
     <li key={item}>
       <a
         href={link}
-        className={`text-[16px] hover:duration-300 hover:font-semibold hover:transition-all block py-2 pl-3 pr-4 ${
+        className={`text-[16px] hover:text-[#0376EA]  hover:duration-300 hover:font-bold hover:transition-all block py-2 pl-3 pr-4 ${
           pathname === link
             ? currentStatusColorStyle.active
             : currentStatusColorStyle.inactive
@@ -37,7 +37,9 @@ export default function Navbar() {
   ));
 
   return (
-    <div className="navbar bg-[#007CF5] text-white shadow-sm px-10 mx-auto">
+    // bg-[#007CF5]
+    // #0376EA
+    <div className="flex w-full min-h-14 items-center bg-white text-[#0376EA] shadow-sm px-10 mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,7 +66,7 @@ export default function Navbar() {
             {renderedNavItems}
           </ul>
         </div>
-        <a className="text-xl font-medium">Techno Cool Associates</a>
+        <a className="text-xl font-bold">Logo</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-10 text-white">
