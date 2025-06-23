@@ -7,7 +7,7 @@ export default function Banner() {
   //   #019DF4
   // #0066F7
   return (
-    // <div className="w-full h-[28rem] bg-gradient-to-r from-[#019DF4] to-[#0066F7] relative">
+    // <div className="w-full h-[30rem] bg-gradient-to-r from-[#019DF4] to-[#0066F7] relative">
     <div className="w-full h-[30rem] bg-gradient-to-r from-[#015ed8] to-[#002595] relative">
       <div className="h-full w-full mx-auto flex flex-col items-center justify-center">
         <div className="pt-7 w-[50%] flex justify-center items-center gap-10  text-center">
@@ -37,7 +37,7 @@ export default function Banner() {
           <img
             src="/ac.svg"
             alt=""
-            className="w-[85%] absolute -top-8 -left-6 z-50"
+            className="w-[85%] absolute -top-8 -left-6 z-40"
           />
           <img
             src="/snow.svg"

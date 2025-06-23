@@ -7,9 +7,9 @@ export default function Navbar() {
   const navItems = [
     { item: "Home", link: "/" },
     { item: "Products", link: "/products" },
-    { item: "About", link: "#" },
-    { item: "Contact ", link: "#" },
-    { item: "Previous work", link: "#" },
+    { item: "About", link: "/about" },
+    { item: "Contact ", link: "/contact" },
+    { item: "Previous work", link: "/work" },
   ];
   const pathname = usePathname();
 
@@ -39,7 +39,7 @@ export default function Navbar() {
   return (
     // bg-[#007CF5]
     // #0376EA
-    <div className="flex w-full min-h-14 items-center bg-white text-[#0376EA] shadow-sm px-10 mx-auto">
+    <div className="fixed z-50 flex w-full min-h-14 items-center bg-white text-[#0376EA] shadow-sm px-10 mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

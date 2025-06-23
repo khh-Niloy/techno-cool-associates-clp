@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { HiPhone } from "react-icons/hi";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -82,16 +83,24 @@ const Footer = () => {
               <h6 className="text-[19px] font-semibold mb-4">Quick Links</h6>
               <div className="flex flex-col gap-2 text-black/70 text-sm">
                 <li>
-                  <a className="link link-hover">Products</a>
+                  <Link href={"/products"} className="link link-hover">
+                    Products
+                  </Link>
                 </li>
                 <li>
-                  <a className="link link-hover">About</a>
+                  <Link href={"/about"} className="link link-hover">
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <a className="link link-hover">Contact</a>
+                  <Link href={"/contact"} className="link link-hover">
+                    Contact
+                  </Link>
                 </li>
                 <li>
-                  <a className="link link-hover">Previous work</a>
+                  <Link href={"/work"} className="link link-hover">
+                    Previous work
+                  </Link>
                 </li>
               </div>
             </nav>
