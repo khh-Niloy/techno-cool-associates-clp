@@ -15,16 +15,16 @@ export default function Navbar() {
 
   const currentStatusColorStyle = {
     active:
-      "text-white font-extralight bg-purple-700 underline rounded lg:bg-transparent lg:text-white lg:p-0",
+      "text-white font-medium bg-purple-700 underline rounded lg:bg-transparent lg:text-white lg:p-0",
     inactive:
-      "text-white border-b border-gray-100 hover:bg-gray-50 font-extralight lg:hover:bg-transparent lg:border-0 lg:p-0",
+      "text-white border-b border-gray-100 hover:bg-gray-50 font-normal lg:hover:bg-transparent lg:border-0 lg:p-0",
   };
 
   const renderedNavItems = navItems.map(({ item, link }) => (
     <li key={item}>
       <a
         href={link}
-        className={`text-[16px] hover:duration-300 font-extralight hover:font-semibold hover:transition-all block py-2 pl-3 pr-4 ${
+        className={`text-[16px] hover:duration-300 hover:font-semibold hover:transition-all block py-2 pl-3 pr-4 ${
           pathname === link
             ? currentStatusColorStyle.active
             : currentStatusColorStyle.inactive
@@ -37,7 +37,7 @@ export default function Navbar() {
   ));
 
   return (
-    <div className="navbar bg-[#3661DF] text-white shadow-sm px-10 mx-auto">
+    <div className="navbar bg-[#007CF5] text-white shadow-sm px-10 mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
