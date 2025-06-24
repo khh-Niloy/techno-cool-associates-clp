@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { AnimatePresence } from "framer-motion";
+import PageTransitionWrapper from "./components/Home/PageTransitionWrapper";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -18,7 +20,11 @@ export default function RootLayout({ children }) {
     <html data-theme="light" lang="en">
       <body className={`${inter.variable} antialiased bg-white interFont`}>
         <Navbar />
-        <main className="pt-12">{children}</main>
+        <AnimatePresence mode="wait">
+          <PageTransitionWrapper>
+            <main className="pt-12">{children}</main>
+          </PageTransitionWrapper>
+        </AnimatePresence>
         <Footer />
       </body>
     </html>

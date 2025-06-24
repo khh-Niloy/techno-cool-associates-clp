@@ -28,12 +28,14 @@ const Footer = () => {
             </h1>
 
             <form className="shadow-xl">
-              <Button
-                className="bg-[#007CF5] text-white cursor-pointer rounded-sm"
-                variant=""
-              >
-                Click Here
-              </Button>
+              <Link href={"/contact"}>
+                <Button
+                  className="bg-[#007CF5] text-white cursor-pointer rounded-sm"
+                  variant=""
+                >
+                  Click Here
+                </Button>
+              </Link>
             </form>
 
             <div>
