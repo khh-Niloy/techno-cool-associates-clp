@@ -21,8 +21,8 @@ export default function TestBanner() {
           </h2>
         </div>
 
-        <div className="bg-white shadow-2xl px-7 pb-4 pt-3 text-left rounded-xl rounded-br-[3rem] w-[12.3rem] mt-3">
-          <h1 className="text-4xl text-blue-600 font-bold">20 Years</h1>
+        <div className="bg-white shadow-2xl px-7 pb-4 pt-3 text-left rounded-xl rounded-br-[3rem] w-[14rem] mt-3">
+          <h1 className="text-4xl text-blue-600 font-bold">20+ Years</h1>
           <h1 className="text-lg text-black/80 leading-5.5 mt-1">
             of Experience in HVAC Systems
           </h1>

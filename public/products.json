@@ -1,0 +1,100 @@
+[
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Ceiling Mounted Cassette",
+    "model": "FXFSQ-ARV16/ARVI",
+    "shortDetails": "This smart air conditioner offers fast cooling, voice control compatibility, and energy-efficient inverter technology.",
+    "fullDetails": "This smart air conditioner offers fast cooling, voice control compatibility, and energy-efficient inverter technology."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Slim Ceiling Mounted Duct Type",
+    "model": "FXDQ-PDV36 , FXDQ-NDV36",
+    "shortDetails": "Crystal-clear sound, no wires.",
+    "fullDetails": "Compact wireless earbuds with noise cancellation, long battery life, and a comfortable fit for all-day use."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "4K Smart TV",
+    "shortDetails": "Ultra HD display with streaming apps.",
+    "fullDetails": "Enjoy cinematic visuals with this 4K Smart TV featuring HDR support and built-in apps like Netflix and YouTube."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Gaming Laptop",
+    "shortDetails": "High-performance laptop for gamers.",
+    "fullDetails": "Equipped with a powerful GPU, fast SSD, and RGB keyboard for the ultimate gaming experience."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Smartwatch",
+    "shortDetails": "Track fitness and notifications.",
+    "fullDetails": "A stylish smartwatch that monitors your heart rate, sleep, and steps, with app notifications on the go."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Robot Vacuum",
+    "shortDetails": "Automatic floor cleaning.",
+    "fullDetails": "This robot vacuum maps your room and cleans efficiently with obstacle detection and smart scheduling."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Bluetooth Speaker",
+    "shortDetails": "Portable and waterproof.",
+    "fullDetails": "Enjoy music on the go with this compact, waterproof Bluetooth speaker with deep bass and long playtime."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Smart Refrigerator",
+    "shortDetails": "Wi-Fi enabled cooling system.",
+    "fullDetails": "A modern fridge with touchscreen, temperature control via app, and large storage compartments."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Home Security Camera",
+    "shortDetails": "24/7 surveillance and alerts.",
+    "fullDetails": "Smart home security camera with motion detection, night vision, and cloud storage options."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Electric Scooter",
+    "shortDetails": "Eco-friendly personal transport.",
+    "fullDetails": "Lightweight, foldable electric scooter with 25 km range, quick charging, and LED lights for night rides."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Noise-Cancelling Headphones",
+    "shortDetails": "Premium audio, zero distractions.",
+    "fullDetails": "Experience immersive sound with active noise cancellation and long battery life for uninterrupted listening."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Air Purifier",
+    "shortDetails": "Breathe cleaner air indoors.",
+    "fullDetails": "HEPA filter air purifier removes dust, allergens, and odors, perfect for bedrooms and living rooms."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Smart Light Bulbs",
+    "shortDetails": "Voice-controlled lighting.",
+    "fullDetails": "Change color, brightness, and schedule lights using an app or voice commands with Alexa/Google Assistant."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Fitness Tracker",
+    "shortDetails": "Monitor health on the go.",
+    "fullDetails": "Track steps, calories, sleep, and workouts with real-time updates and water-resistant design."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Tablet",
+    "shortDetails": "Portable screen for work & play.",
+    "fullDetails": "Slim and powerful tablet with vibrant display, multitasking features, and stylus support."
+  },
+  {
+    "image": "https://via.placeholder.com/150",
+    "productName": "Smart Coffee Maker",
+    "shortDetails": "Brew from your phone.",
+    "fullDetails": "Wi-Fi-enabled coffee maker that lets you schedule brews, adjust strength, and get coffee ready remotely."
+  }
+]
