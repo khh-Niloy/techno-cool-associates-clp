@@ -9,7 +9,7 @@ export default function Navbar() {
     { item: "Products", link: "/products" },
     { item: "About", link: "/about" },
     { item: "Contact ", link: "/contact" },
-    { item: "Previous work", link: "/work" },
+    { item: "Previous work", link: "/previous-work" },
   ];
   const pathname = usePathname();
   const [header, setheader] = useState(false);

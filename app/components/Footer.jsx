@@ -100,7 +100,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/work"} className="link link-hover">
+                  <Link href={"/previous-work"} className="link link-hover">
                     Previous work
                   </Link>
                 </li>
