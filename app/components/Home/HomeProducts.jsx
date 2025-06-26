@@ -12,15 +12,15 @@ export default function HomeProducts() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3000/products.json");
+      const res = await fetch(
+        "https://techno-cool-associates-clp.vercel.app/products.json"
+      );
       const data = await res.json();
       setallProduct(data);
       //   return data;
     };
     fetchData();
   }, []);
-
-  //   const allProduct = await getAllProduct();
 
   return (
     <div className="w-[90%] lg:w-[80%] mx-auto pb-20 lg:pt-12 pt-10 sm:pt-12">

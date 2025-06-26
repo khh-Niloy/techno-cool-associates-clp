@@ -12,7 +12,9 @@ export default function Products() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3000/products.json");
+      const res = await fetch(
+        "https://techno-cool-associates-clp.vercel.app/products.json"
+      );
       const data = await res.json();
       setallProduct(data);
       //   return data;
