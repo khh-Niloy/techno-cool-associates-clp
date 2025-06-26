@@ -51,7 +51,10 @@ export default function ClientSection3D() {
           Bangladesh Biman Bahini, and many more.
         </p>
       </div>
-      <div className="mx-auto my-10 rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800">
+
+      <div
+        className={`mx-auto "my-10" rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800`}
+      >
         <ThreeDMarquee images={images} />
       </div>
     </div>

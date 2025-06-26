@@ -3,6 +3,7 @@ import { FaUserTie } from "react-icons/fa";
 import VissonMission from "../components/VissonMission";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import ClientSection3D from "../components/Home/ClientSection3D";
 
 export default function about() {
   return (
@@ -92,6 +93,8 @@ export default function about() {
           ]}
         />
       </div>
+
+      <ClientSection3D />
 
       <div className="flex flex-col text-center justify-center mb-10 pt-16 ">
         <h1 className="lg:text-3xl text-2xl font-semibold">
