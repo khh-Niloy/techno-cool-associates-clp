@@ -6,17 +6,24 @@ import Link from "next/link";
 import ClientSection3D from "../components/Home/ClientSection3D";
 
 export default function about() {
+  const message = [
+    "The foundation of any organization should be based on relationship building.",
+    "We are blessed with capable, caring professionals who go the extra mile to fulfill our corporate mission and meet their high personal standards.",
+    "Our goal is to continue to provide a superior level of service that is recognized nationwide.",
+    "Because, we know Quality matters.",
+  ];
+
   return (
     <div className="py-16 w-[80%] mx-auto">
       <div className="flex flex-col items-center justify-center mb-10">
         <h1 className="lg:text-3xl text-2xl font-semibold">Who We Are</h1>
         <div className="text-left mt-3">
-          <p className="lg:text-lg text-xs mt-2">
+          <p className="lg:text-lg text-sm mt-2">
             TECHNO COOL ASSOCIATES is a leading engineering company in
             Bangladesh giving the best and comprehensive commercial HVAC
             (Heating, Ventilation and Air-Condition) solutions since 2003.
           </p>
-          <p className="lg:text-lg text-xs mt-2">
+          <p className="lg:text-lg text-sm mt-2">
             We expertise in design & drawing, consultancy, supply & installation
             support and after sales & maintenance in the field of HVAC. Products
             of supreme quality are imported from world renowned manufacturers to
@@ -27,21 +34,12 @@ export default function about() {
             <h1 className="text-lg font-medium">
               A Message from Our Chief Executive:
             </h1>
-            <ul className="text-md list-disc list-inside mt-1">
-              <li>
-                The foundation of any organization should be based on
-                relationship building.
-              </li>
-              <li>
-                We are blessed with capable, caring professionals who go the
-                extra mile to fulfill our corporate mission and meet their high
-                personal standards.
-              </li>
-              <li>
-                Our goal is to continue to provide a superior level of service
-                that is recognized nationwide.
-              </li>
-              <li>Because, we know Quality matters.</li>
+            <ul className="list-disc list-inside mt-1">
+              {message.map((e, index) => (
+                <li className="lg:text-lg text-sm" key={index}>
+                  {e}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -57,7 +55,7 @@ export default function about() {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
         <VissonMission
           color={"bg-[#06b6d4]/6"}
           headText={"Mission"}
@@ -139,13 +137,13 @@ export default function about() {
             demonstrated through our various dealer certificates and awards.
           </p>
           <div className="flex flex-col gap-5">
-            <div className="w-[50%]">
+            <div className="lg:w-[50%] w-[90%]">
               <img src="/aw1.png" className="w-full object-cover mt-3" alt="" />
             </div>
-            <div className="w-[50%]">
+            <div className="lg:w-[50%] w-[90%]">
               <img src="/aw2.png" className="w-full object-cover mt-3" alt="" />
             </div>
-            <div className="w-[50%]">
+            <div className="lg:w-[50%] w-[90%]">
               <img src="/aw3.png" className="w-full object-cover mt-3" alt="" />
             </div>
           </div>
@@ -169,7 +167,7 @@ export default function about() {
           </p>
         </div>
 
-        <div className="mt-10 space-x-5">
+        <div className="mt-10 flex gap-3 justify-center">
           <Link href={"/previous-work"}>
             <Button className="bg-blue-600 hover:bg-blue-700 cursor-pointer">
               View Our Projects
