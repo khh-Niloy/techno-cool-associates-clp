@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
+import PageTitle from "../components/PageTitle";
 
 export default function work() {
   const sectors = [
@@ -83,19 +84,51 @@ export default function work() {
     },
   ];
 
-  return (
-    <div className="py-6 sm:py-8 md:py-12 w-[80%] mx-auto">
-      <div className="flex flex-col items-center justify-center mb-10 pt-10">
-        <h1 className="lg:text-3xl text-2xl font-semibold">
-          100+ Completed Projects, 20+ Years of Expertise
-        </h1>
-        <p className="lg:text-sm text-xs text-center mt-2">
-          Delivering Advanced HVAC Solutions Across Diverse Industries in
-          Bangladesh.
-        </p>
-      </div>
+  const consultants = [
+    {
+      consultant: "WSP, Australia",
+      project: "Microsoft Dhaka Office",
+    },
+    {
+      consultant: "IBS Gulf Design, India & World Wide",
+      project: "Standard Chartered Bank",
+    },
+    {
+      consultant: "DDA, Singapore",
+      project: "Elegant Group",
+    },
+    {
+      consultant: "Design Consultancy Services, England",
+      project: "British Council, Chittagong",
+    },
+    {
+      consultant: "Utility Professionals, Bangladesh",
+      project: "British Council, Dhaka",
+    },
+    {
+      consultant: "AVE Engineers & Consultant Ltd",
+      project: "Chairman Residence, Bashundhara of UCC Group",
+    },
+    {
+      consultant: "Air-Tech Engineers & Consultants",
+      project: "Australian High Commission, Dhaka",
+    },
+    {
+      consultant: "KAYMONTO & PARTNERS",
+      project: "Citybank NA, Motijheel Branch",
+    },
+  ];
 
-      <div className="">
+  return (
+    <div className="py-6 sm:py-8 md:py-12 lg:w-[80%] w-[85%] mx-auto">
+      <PageTitle
+        headTitle={"100+ Completed Projects, 20+ Years of Expertise"}
+        subTitle={
+          "Delivering Advanced HVAC Solutions Across Diverse Industries in Bangladesh."
+        }
+      />
+
+      <div>
         <p>
           We have successfully completed more than 100 projects since our
           inception. We engage with a variety of industries by providing
@@ -103,9 +136,10 @@ export default function work() {
           range of buildings and our services have been acquired by various
           industries, including:
         </p>
-        <div className="mt-4 grid grid-cols-4 gap-3">
-          {sectors.map((e) => (
+        <div className="mt-4 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3">
+          {sectors.map((e, index) => (
             <Button
+              key={index}
               className="bg-[#F2F2F3] text-black font-normal hover:bg-[#e9e9e9] hover:border
              hover:border-black/10"
             >
@@ -114,62 +148,56 @@ export default function work() {
           ))}
         </div>
 
-        <h1 className="mt-10 text-lg font-medium mb-4">
-          Consultants We Worked With
-        </h1>
-        <ol className="list-decimal list-inside space-y-2">
-          <li>
-            <strong>WSP, Australia:</strong> Project: Microsoft Dhaka Office
-          </li>
-          <li>
-            <strong>IBS Gulf Design, India & World Wide:</strong> Project:
-            Standard Chartered Bank
-          </li>
-          <li>
-            <strong>DDA, Singapore:</strong> Project: Elegant Group
-          </li>
-          <li>
-            <strong>Design Consultancy Services, England:</strong> Project:
-            British Council, Chittagong
-          </li>
-          <li>
-            <strong>Utility Professionals, Bangladesh:</strong> Project: British
-            Council, Dhaka
-          </li>
-          <li>
-            <strong>AVE Engineers & Consultant Ltd:</strong> Project: Chairman
-            Residence, Bashundhara of UCC Group
-          </li>
-          <li>
-            <strong>Air-Tech Engineers & Consultants:</strong> Project:
-            Australian High Commission, Dhaka
-          </li>
-          <li>
-            <strong>KAYMONTO & PARTNERS:</strong> Project: Citybank NA,
-            Motijheel Branch
-          </li>
-        </ol>
+        <div className="mt-14">
+          <PageTitle
+            headTitle={"Consultants We Worked With"}
+            subTitle={"Our Esteemed Consulting Partners Across Key Projects"}
+          />
+        </div>
+
+        <div className="overflow-x-auto">
+          <table className="table">
+            <thead>
+              <tr className="text-black font-medium">
+                <th></th>
+                <th>Consultants</th>
+                <th>Associated Projects</th>
+              </tr>
+            </thead>
+            <tbody>
+              {consultants.map(({ consultant, project }, index) => (
+                <tr key={index} className="hover:bg-base-300">
+                  <th>{index + 1}</th>
+                  <td>{consultant}</td>
+                  <td>{project}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div className="flex flex-col items-center justify-center mb-10 pt-20">
-        <h1 className="lg:text-3xl text-2xl font-semibold">
-          Our Featured Projects
-        </h1>
-        <p className="lg:text-sm text-xs text-center mt-2">
-          We partner with renowned engineering and design firms from <br />{" "}
-          around the world to deliver excellence on every project.
-        </p>
+        <PageTitle
+          lgwidth={"60%"}
+          width={"90%"}
+          headTitle={"Our Featured Projects"}
+          subTitle={
+            "We partner with renowned engineering and design firms from around the world to deliver excellence on every project."
+          }
+        />
 
-        <div className="grid grid-cols-4 gap-5 mt-10">
-          {works.map((e) => (
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 ">
+          {works.map((e, index) => (
             <div
+              key={index}
               className={`card card-compact bg-base-100 hover:scale-[1.03] duration-300 transition-all shadow-lg text-black`}
             >
               <figure className="h-[10rem] drop-shadow-xl relative">
                 <img
                   className="object-cover rounded-t-lg w-full h-[10rem]"
                   src={e.image}
-                  // alt="Shoes"
+                  alt={e.image}
                 />
               </figure>
               <div
