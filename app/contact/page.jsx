@@ -1,23 +1,20 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
+import PageTitle from "../components/PageTitle";
 
 export default function contact() {
   return (
     <div className="py-6 sm:py-8 md:py-12">
-      {/* Header */}
-      <div className="text-center mb-16 relative">
-        <h1 className="text-3xl md:text-4xl sm:text-5xl font-bold text-blue-600 mb-3 relative inline-block">
-          Contact Us
-        </h1>
-        <p className="text-black max-w-prose mx-auto w-11/12">
-          Have questions or concerns? We're here to help. Reach out to our team
-          through any of the channels below.
-        </p>
-      </div>
+      <PageTitle
+        width={"85%"}
+        headTitle={"Contact Us"}
+        subTitle={
+          "Have questions or concerns? We're here to help. Reach out to our team through any of the channels below."
+        }
+      />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-5">
         <div className="grid grid-cols-1  lg:grid-cols-2 gap-8">
-          {/* Contact Form */}
           <div className=" rounded-lg px-8 ">
             <h2 className="text-2xl font-bold text-black mb-6 relative inline-block">
               Send us a Message
@@ -108,9 +105,7 @@ export default function contact() {
             </form>
           </div>
 
-          {/* Contact Information */}
           <div className="space-y-8">
-            {/* Emergency Contact */}
             <div className="bg-[red]/6 border border-red-300 rounded-lg p-6 shadow-lg shadow-red-900/5">
               <div className="flex items-center gap-3 mb-3">
                 <svg
@@ -139,7 +134,6 @@ export default function contact() {
               </p>
             </div>
 
-            {/* Office Information */}
             <div className="bg-blue-50/10 border border-gray-500/10 rounded-lg p-6  shadow-lg backdrop-blur-sm">
               <h3 className="text-lg font-semibold text-black mb-4 relative inline-block">
                 Office Information
