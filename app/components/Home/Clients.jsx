@@ -36,7 +36,7 @@ const people = [
 
 export function Clients() {
   return (
-    <div className="flex flex-row items-center justify-start w-full mt-3">
+    <div className="flex flex-row items-center lg:justify-start justify-center w-full mt-3">
       <AnimatedTooltip items={people} />
     </div>
   );

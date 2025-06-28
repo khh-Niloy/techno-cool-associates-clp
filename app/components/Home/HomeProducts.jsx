@@ -25,7 +25,7 @@ export default function HomeProducts() {
   return (
     <div className="w-[90%] lg:w-[80%] mx-auto pb-20 lg:pt-12 pt-10 sm:pt-12">
       <div className="mb-12 text-center">
-        <h1 className="text-center font-semibold lg:text-3xl text-2xl">
+        <h1 className="text-center text-blue-600 font-semibold lg:text-3xl text-2xl">
           Top 6 Preferred HVAC Solutions{" "}
         </h1>
         <p className="lg:text-sm text-xs mt-2">
@@ -36,8 +36,9 @@ export default function HomeProducts() {
       </div>
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 w-[90%] lg:w-[100%] mx-auto">
-        {allProduct.slice(0, 6).map((e) => (
+        {allProduct.slice(0, 6).map((e, index) => (
           <div
+            key={index}
             className={`card card-compact bg-base-100 hover:scale-[1.03] duration-300 transition-all shadow-xl text-black`}
           >
             <GlowingEffect

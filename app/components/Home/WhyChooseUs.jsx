@@ -5,19 +5,19 @@ import { RiRestaurant2Line } from "react-icons/ri";
 import { FaUserTie } from "react-icons/fa6";
 import { MdBusinessCenter } from "react-icons/md";
 import { HiOutlineBadgeCheck } from "react-icons/hi";
+import PageTitle from "../PageTitle";
 
 export default function WhyChooseUs() {
   return (
     <div className="py-16 flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center mb-10">
-        <h1 className="lg:text-3xl text-2xl font-semibold">Why Choose Us</h1>
-        <p className="lg:text-sm text-xs text-center mt-2">
-          Leading Bangladesh's HVAC Landscape for 20 Years: We Combine Global
-          Product Standards <br /> with Local Expertise to Deliver Sustainable,
-          Energy-Efficient Air Solutions.
-        </p>
-      </div>
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-5 w-[75%]">
+      <PageTitle
+        width={"90%"}
+        headTitle={"Why Choose Us"}
+        subTitle={
+          "Leading Bangladesh's HVAC Industry for 20 Years — Merging Global Standards with Local Expertise for Smart, Sustainable Air Solutions."
+        }
+      />
+      <div className="grid lg:grid-cols-4 grid-cols-1 gap-5 w-[75%]">
         <div className="p-5 py-7 bg-[#a855f7]/10 rounded-lg">
           <MdBusinessCenter
             className="p-3 bg-gradient-to-br from-[#9642e4] to-purple-300

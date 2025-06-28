@@ -1,5 +1,6 @@
 "use client";
 import { ThreeDMarquee } from "../../../components/ui/3d-marquee";
+import PageTitle from "../PageTitle";
 
 export default function ClientSection3D() {
   const images = [
@@ -41,19 +42,15 @@ export default function ClientSection3D() {
   ];
   return (
     <div className="w-[80%] mx-auto mt-16 pb-12">
-      <div className="flex flex-col items-center justify-center mb-10">
-        <h1 className="lg:text-3xl text-2xl font-semibold">
-          Our Valued Clients
-        </h1>
-        <p className="lg:text-sm text-xs text-center mt-2">
-          We are proud to have partnered with leading organizations, including
-          banglalink, <br /> Standard Chartered, Dabur, DESHBANDHU GROUP,
-          Bangladesh Biman Bahini, and many more.
-        </p>
-      </div>
+      <PageTitle
+        headTitle={"Our Valued Clients"}
+        subTitle={
+          "We are proud to have partnered with leading organizations, including banglalink, Standard Chartered, Dabur, DESHBANDHU GROUP, Bangladesh Biman Bahini, and many more."
+        }
+      />
 
       <div
-        className={`mx-auto "my-10" rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800`}
+        className={`mx-auto my-10 rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800`}
       >
         <ThreeDMarquee images={images} />
       </div>
