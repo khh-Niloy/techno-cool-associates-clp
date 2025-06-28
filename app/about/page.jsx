@@ -16,7 +16,9 @@ export default function about() {
   return (
     <div className="py-16 w-[80%] mx-auto">
       <div className="flex flex-col items-center justify-center mb-10">
-        <h1 className="lg:text-3xl text-2xl font-semibold">Who We Are</h1>
+        <h1 className="lg:text-3xl text-2xl text-blue-600 font-semibold">
+          Who We Are
+        </h1>
         <div className="text-left mt-3">
           <p className="lg:text-lg text-sm mt-2">
             TECHNO COOL ASSOCIATES is a leading engineering company in
@@ -46,7 +48,7 @@ export default function about() {
       </div>
 
       <div className="flex flex-col items-center justify-center mb-10">
-        <h1 className="lg:text-3xl text-2xl font-semibold">
+        <h1 className="lg:text-3xl text-2xl font-semibold text-blue-600">
           Our Mission, Vision, & Values
         </h1>
         <p className="lg:text-sm text-xs text-center mt-2">
@@ -95,7 +97,7 @@ export default function about() {
       <ClientSection3D />
 
       <div className="flex flex-col text-center justify-center mb-10 pt-16 ">
-        <h1 className="lg:text-3xl text-2xl font-semibold">
+        <h1 className="lg:text-3xl text-2xl font-semibold text-blue-600">
           Our Expertise & Services
         </h1>
 
