@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Navbar() {
   const navItems = [
@@ -31,10 +32,10 @@ export default function Navbar() {
 
   const currentStatusColorStyle = {
     active: `${
-      header ? "text-white lg:text-white" : "text-black lg:text-black"
-    }  font-medium bg-purple-700 underline rounded lg:bg-transparent  lg:p-0`,
+      header ? "text-white lg:text-white" : "text-white lg:text-black"
+    }  font-medium bg-blue-600 underline rounded lg:bg-transparent  lg:p-0`,
     inactive: `${
-      header ? "text-white" : "text-black"
+      header ? "lg:text-white text-black" : "text-black"
     } border-b border-gray-100 hover:bg-gray-50 font-normal lg:hover:bg-transparent lg:border-0 lg:p-0`,
   };
 
@@ -57,12 +58,10 @@ export default function Navbar() {
   ));
 
   return (
-    // bg-[#007CF5]
-    // #0376EA
     <div
       className={`fixed z-50 flex w-full min-h-14 items-center ${
         header ? "bg-blue-600 text-[white]" : "bg-white text-[#0376EA]"
-      } shadow-sm px-10 mx-auto transition-all duration-500 ease-in-out`}
+      } shadow-sm lg:px-10 px-5 mx-auto transition-all duration-500 ease-in-out`}
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -90,9 +89,9 @@ export default function Navbar() {
             {renderedNavItems}
           </ul>
         </div>
-        <a className="text-xl font-bold">
-          <img src="/logo.svg" alt="" className="w-10" />
-        </a>
+        <Link href="/">
+          <img src="/logo.svg" alt="" className="w-10 lg:flex hidden" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-10 text-white">
@@ -100,7 +99,9 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn hidden">Button</a>
+        <Link href="/">
+          <img src="/logo.svg" alt="" className="w-10 lg:hidden" />
+        </Link>
       </div>
     </div>
   );
