@@ -25,7 +25,7 @@ export default function HomeProducts() {
   return (
     <div className="w-[90%] lg:w-[80%] mx-auto pb-20 lg:pt-12 pt-10 sm:pt-12">
       <div className="mb-12 text-center">
-        <h1 className="text-center text-blue-600 font-semibold lg:text-3xl text-2xl">
+        <h1 className="text-center text-black font-bold lg:text-3xl text-2xl">
           Top 6 Preferred HVAC Solutions{" "}
         </h1>
         <p className="lg:text-sm text-xs mt-2">
@@ -39,7 +39,7 @@ export default function HomeProducts() {
         {allProduct.slice(0, 6).map((e, index) => (
           <div
             key={index}
-            className={`card card-compact bg-base-100 hover:scale-[1.03] duration-300 transition-all shadow-xl text-black`}
+            className={`card card-compact rounded-2xl bg-base-100 hover:scale-[1.03] duration-300 transition-all shadow-xl text-black`}
           >
             <GlowingEffect
               blur={0}
@@ -52,7 +52,7 @@ export default function HomeProducts() {
             />
             <figure className="h-[10rem] drop-shadow-xl relative">
               <div
-                className="object-cover rounded-t-lg w-full h-[10rem] bg-black/10"
+                className="object-cover rounded-2xl w-full h-[10rem] mt-5 mx-3 bg-black/10"
                 // src={e.image}
                 // alt="Shoes"
               />
@@ -64,27 +64,10 @@ export default function HomeProducts() {
               <h2 className="card-title">{e.productName}</h2>
               <p className="text-sm">Origin: {e.model}</p>
               <p className="line-clamp-2 text-sm mt-2">{e.shortDetails}</p>
-              <div className=" text-white mt-2">
-                {/* <Link href={""} className="w-full">
-                  <button
-                    className="hover:bg-[#FF2727] bg-[#191A23] text-white
-                    rounded-lg w-full py-2 mt-3 font-normal cursor-pointer text-sm active:scale-95 transition-all"
-                  >
-                    See More
-                  </button>
-                </Link> */}
+              <div className=" text-white mt-3">
                 <ModalButton />
               </div>
             </div>
-            {/* <div>
-                <h2 className="text-lg font-medium">
-                  {e.productName}{" "}
-                  <span className="text-sm font-normal">{e?.more}</span>
-                </h2>
-                <p className="line-clamp-2 text-sm mt-1">Model: {e?.model}</p>
-              </div>
-              <span className="text-sm font-normal">{e?.shortDetails}</span>
-              <ModalButton /> */}
           </div>
         ))}
       </div>

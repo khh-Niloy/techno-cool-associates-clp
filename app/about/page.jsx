@@ -4,6 +4,10 @@ import VissonMission from "../components/VissonMission";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ClientSection3D from "../components/Home/ClientSection3D";
+import PageTitle from "../components/PageTitle";
+import { TbTargetArrow } from "react-icons/tb";
+import { FaEye } from "react-icons/fa";
+import { FaHandshake } from "react-icons/fa6";
 
 export default function about() {
   const message = [
@@ -13,10 +17,45 @@ export default function about() {
     "Because, we know Quality matters.",
   ];
 
+  const consultants = [
+    {
+      consultant: "WSP, Australia",
+      project: "Microsoft Dhaka Office",
+    },
+    {
+      consultant: "IBS Gulf Design, India & World Wide",
+      project: "Standard Chartered Bank",
+    },
+    {
+      consultant: "DDA, Singapore",
+      project: "Elegant Group",
+    },
+    {
+      consultant: "Design Consultancy Services, England",
+      project: "British Council, Chittagong",
+    },
+    {
+      consultant: "Utility Professionals, Bangladesh",
+      project: "British Council, Dhaka",
+    },
+    {
+      consultant: "AVE Engineers & Consultant Ltd",
+      project: "Chairman Residence, Bashundhara of UCC Group",
+    },
+    {
+      consultant: "Air-Tech Engineers & Consultants",
+      project: "Australian High Commission, Dhaka",
+    },
+    {
+      consultant: "KAYMONTO & PARTNERS",
+      project: "Citybank NA, Motijheel Branch",
+    },
+  ];
+
   return (
     <div className="py-16 w-[80%] mx-auto">
       <div className="flex flex-col items-center justify-center mb-10">
-        <h1 className="lg:text-3xl text-2xl text-blue-600 font-semibold">
+        <h1 className="lg:text-3xl text-2xl text-black font-bold">
           Who We Are
         </h1>
         <div className="text-left mt-3">
@@ -47,8 +86,8 @@ export default function about() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center mb-10">
-        <h1 className="lg:text-3xl text-2xl font-semibold text-blue-600">
+      <div className="flex flex-col items-center justify-center mt-16">
+        <h1 className="lg:text-3xl text-2xl text-black font-bold">
           Our Mission, Vision, & Values
         </h1>
         <p className="lg:text-sm text-xs text-center mt-2">
@@ -67,6 +106,8 @@ export default function about() {
             "Building up close relationship with customers.",
             "Earning reputation rather than profit making.",
           ]}
+          icon={<TbTargetArrow className="text-2xl" />}
+          gradient={"bg-gradient-to-br from-[#06b6d4] to-cyan-300"}
         />
 
         <VissonMission
@@ -79,6 +120,8 @@ export default function about() {
             "To save energy by introducing Inverter Technology.",
             "To achieve Customer Satisfaction.",
           ]}
+          icon={<FaEye className="text-2xl" />}
+          gradient={"bg-gradient-to-br from-[#9642e4] to-purple-300"}
         />
 
         <VissonMission
@@ -91,13 +134,15 @@ export default function about() {
             "Strict Supervision, Monitoring & Timely Completion",
             "Service & Warranty Commitment",
           ]}
+          icon={<FaHandshake className="text-2xl" />}
+          gradient={"bg-gradient-to-br from-[#22c55e] to-green-300"}
         />
       </div>
 
       <ClientSection3D />
 
-      <div className="flex flex-col text-center justify-center mb-10 pt-16 ">
-        <h1 className="lg:text-3xl text-2xl font-semibold text-blue-600">
+      <div className="flex flex-col text-center justify-center mb-10 pt-8 ">
+        <h1 className="lg:text-3xl text-2xl text-black font-bold">
           Our Expertise & Services
         </h1>
 
@@ -105,27 +150,27 @@ export default function about() {
           <h1 className="text-lg font-semibold">Authorized Dealers</h1>
           <p>
             We are authorized dealers for DAIKIN (JAPAN) , LG (SOUTH KOREA) ,
-            and GCHV (CHINA)
+            and DB (USA)
           </p>
           <div className="flex gap-5">
             <div>
               <img
                 src="/daikin.png"
-                className="w-32 border border-black/10 px-3 rounded-md mt-3"
+                className="w-36 border border-black/10 px-3 rounded-md mt-3"
                 alt=""
               />
             </div>
             <div>
               <img
                 src="/lg.png"
-                className="w-24 border border-black/10 px-3 rounded-md mt-3"
+                className="w-28 border border-black/10 px-3 rounded-md mt-3"
                 alt=""
               />
             </div>
             <div>
               <img
-                src="/gchv.png"
-                className="w-16 border border-black/10 px-3 rounded-md mt-3"
+                src="/usa.png"
+                className="w-28 border border-black/10 px-3 rounded-md mt-3"
                 alt=""
               />
             </div>
@@ -139,26 +184,48 @@ export default function about() {
             demonstrated through our various dealer certificates and awards.
           </p>
           <div className="flex flex-col gap-5">
-            <div className="lg:w-[50%] w-[90%]">
+            <div className="lg:w-[80%] w-[90%]">
               <img src="/aw1.png" className="w-full object-cover mt-3" alt="" />
             </div>
-            <div className="lg:w-[50%] w-[90%]">
+            <div className="lg:w-[80%] w-[90%]">
               <img src="/aw2.png" className="w-full object-cover mt-3" alt="" />
             </div>
-            <div className="lg:w-[50%] w-[90%]">
-              <img src="/aw3.png" className="w-full object-cover mt-3" alt="" />
+            <div className="lg:w-[80%] w-[90%]">
+              <img
+                src="/certificates.png"
+                className="w-full object-cover mt-3"
+                alt=""
+              />
             </div>
           </div>
         </div>
 
-        <div className="text-left mt-10">
-          <h1 className="text-lg font-semibold">Consultants</h1>
-          <p>
-            We have worked with a network of renowned consultants from around
-            the world , including WSP (Australia) , IBS Gulf Design (India &
-            World Wide) , DDA (Singapore) , and Design Consultancy Services
-            (England).
-          </p>
+        <div className="mt-14">
+          <PageTitle
+            headTitle={"Consultants We Worked With"}
+            subTitle={"Our Esteemed Consulting Partners Across Key Projects"}
+          />
+        </div>
+
+        <div className="overflow-x-auto">
+          <table className="table">
+            <thead>
+              <tr className="text-black font-medium">
+                <th></th>
+                <th>Consultants</th>
+                <th>Associated Projects</th>
+              </tr>
+            </thead>
+            <tbody>
+              {consultants.map(({ consultant, project }, index) => (
+                <tr key={index} className="hover:bg-base-300">
+                  <th>{index + 1}</th>
+                  <td>{consultant}</td>
+                  <td>{project}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
 
         <div className="text-left mt-10">

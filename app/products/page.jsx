@@ -21,7 +21,7 @@ export default function Products() {
   return (
     <div className="w-[90%] lg:w-[80%] mx-auto pb-20 lg:pt-12 pt-10 sm:pt-12">
       <div className="mb-12 text-center">
-        <h1 className="text-center font-semibold text-blue-600 lg:text-3xl text-2xl">
+        <h1 className="text-center text-black font-bold lg:text-3xl text-2xl">
           Explore Our HVAC Products{" "}
         </h1>
         <p className="lg:text-sm text-xs mt-2">
@@ -35,7 +35,7 @@ export default function Products() {
         {allProduct.map((e, index) => (
           <div
             key={index}
-            className={`card card-compact bg-base-100 hover:scale-[1.03] duration-300 transition-all shadow-xl text-black`}
+            className={`rounded-2xl card card-compact bg-base-100 hover:scale-[1.03] duration-300 transition-all shadow-xl text-black`}
           >
             <GlowingEffect
               blur={0}
@@ -48,7 +48,7 @@ export default function Products() {
             />
             <figure className="h-[10rem] drop-shadow-xl relative">
               <div
-                className="object-cover rounded-t-lg w-full h-[10rem] bg-black/10"
+                className="object-cover rounded-2xl w-full h-[10rem] mt-5 mx-3 bg-black/10"
                 // src={e.image}
                 // alt="Shoes"
               />
@@ -60,7 +60,7 @@ export default function Products() {
               <h2 className="card-title">{e.productName}</h2>
               <p className="text-sm">Origin: {e.model}</p>
               <p className="line-clamp-2 text-sm mt-2">{e.shortDetails}</p>
-              <div className=" text-white mt-2">
+              <div className=" text-white mt-3">
                 <ModalButton />
               </div>
             </div>

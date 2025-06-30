@@ -41,7 +41,7 @@ export default function ClientSection3D() {
     "/iub.jpg",
   ];
   return (
-    <div className="w-[80%] mx-auto mt-16 pb-12">
+    <div className="w-[80%] mx-auto mt-10 pb-12">
       <PageTitle
         headTitle={"Our Valued Clients"}
         subTitle={
