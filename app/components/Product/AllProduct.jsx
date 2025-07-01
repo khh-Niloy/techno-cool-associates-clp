@@ -10,8 +10,8 @@ export default function AllProduct({ isHome }) {
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
-        // "https://techno-cool-associates-clp.vercel.app/allProduct.json"
-        "http://localhost:3000/allProduct.json"
+        "https://techno-cool-associates-clp.vercel.app/allProduct.json"
+        // "http://localhost:3000/allProduct.json"
       );
       const data = await res.json();
       setallProduct(data);
