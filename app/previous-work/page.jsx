@@ -101,41 +101,6 @@ export default function work() {
     },
   ];
 
-  const consultants = [
-    {
-      consultant: "WSP, Australia",
-      project: "Microsoft Dhaka Office",
-    },
-    {
-      consultant: "IBS Gulf Design, India & World Wide",
-      project: "Standard Chartered Bank",
-    },
-    {
-      consultant: "DDA, Singapore",
-      project: "Elegant Group",
-    },
-    {
-      consultant: "Design Consultancy Services, England",
-      project: "British Council, Chittagong",
-    },
-    {
-      consultant: "Utility Professionals, Bangladesh",
-      project: "British Council, Dhaka",
-    },
-    {
-      consultant: "AVE Engineers & Consultant Ltd",
-      project: "Chairman Residence, Bashundhara of UCC Group",
-    },
-    {
-      consultant: "Air-Tech Engineers & Consultants",
-      project: "Australian High Commission, Dhaka",
-    },
-    {
-      consultant: "KAYMONTO & PARTNERS",
-      project: "Citybank NA, Motijheel Branch",
-    },
-  ];
-
   return (
     <div className="py-6 sm:py-8 md:py-12 lg:w-[80%] w-[85%] mx-auto">
       <PageTitle
@@ -163,34 +128,6 @@ export default function work() {
               {e}
             </Button>
           ))}
-        </div>
-
-        <div className="mt-14">
-          <PageTitle
-            headTitle={"Consultants We Worked With"}
-            subTitle={"Our Esteemed Consulting Partners Across Key Projects"}
-          />
-        </div>
-
-        <div className="overflow-x-auto">
-          <table className="table">
-            <thead>
-              <tr className="text-black font-medium">
-                <th></th>
-                <th>Consultants</th>
-                <th>Associated Projects</th>
-              </tr>
-            </thead>
-            <tbody>
-              {consultants.map(({ consultant, project }, index) => (
-                <tr key={index} className="hover:bg-base-300">
-                  <th>{index + 1}</th>
-                  <td>{consultant}</td>
-                  <td>{project}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
       </div>
 
