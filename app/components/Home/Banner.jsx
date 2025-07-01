@@ -6,8 +6,9 @@ import Link from "next/link";
 export default function Banner() {
   return (
     <div
-      className="w-full lg:h-[30rem] md:h-[52rem] h-[50rem] flex lg:flex-row flex-col bg-gradient-to-r
-     from-[#015ed8] to-[#002595] relative"
+      // className="w-full lg:h-[30rem] md:h-[52rem] h-[50rem] flex lg:flex-row flex-col bg-gradient-to-r
+      //  from-[#015ed8] to-[#002595] relative"
+      className="w-full lg:h-[30rem] md:h-[52rem] h-[50rem] flex lg:flex-row flex-col bg-[#00b4f0] relative"
     >
       <div className="xl:w-[40%] lg:w-[50%] flex flex-col p-14 lg:px-24 lg:items-start items-center">
         <div className="">
@@ -20,7 +21,8 @@ export default function Banner() {
         </div>
 
         <div className="bg-white shadow-2xl px-7 pb-4 pt-3 text-left rounded-xl rounded-br-[3rem] w-[14rem] mt-3">
-          <h1 className="text-4xl text-blue-600 font-bold">20+ Years</h1>
+          {/* <h1 className="text-4xl text-blue-600 font-bold">20+ Years</h1> */}
+          <h1 className="text-4xl text-[#00b4f0] font-bold">20+ Years</h1>
           <h1 className="text-lg text-black/80 leading-5.5 mt-1">
             of Experience in HVAC Systems
           </h1>
@@ -40,22 +42,23 @@ export default function Banner() {
 
       <div className="xl:w-[60%] lg:w-[50%] pr-10">
         <div className="h-full w-full flex flex-col items-center justify-center">
-          <h1 className="text-xl pt-7  text-white font-light text-right lg:translate-y-6">
+          <h1 className="text-xl pt-7 translate-x-24  text-white font-light text-right lg:translate-y-12">
             Top HVAC solutions in Bangladesh
             <br />— proudly serving since 2003.
           </h1>
           <div className="xl:w-[60%] lg:w-[80%] w-[60%] relative h-64 mt-10">
             <img
-              src="/ac2.svg"
+              src="/prod.svg"
               alt=""
-              className="lg:w-[55%] md:w-[60%] w-[75%] absolute lg:top-0 -top-7 lg:right-12 right-0"
+              className="lg:w-[100%] md:w-[60%] w-[75%] absolute lg:-top-16 -top-7 lg:right-12 lg:scale-110 right-0"
             />
-            <img
+            {/* <img
               src="/ac.svg"
               alt=""
               className="lg:w-[85%] md:w-[70%] w-full scale-125 lg:scale-100 absolute -top-8 md:left-0 lg:-left-6
                -left-6 z-40"
-            />
+            /> */}
+            {/* 
             <img
               src="/snow.svg"
               alt=""
@@ -88,7 +91,7 @@ export default function Banner() {
               src="/snow.svg"
               alt=""
               className="lg:w-[26%] md:w-[25%] w-[30%] absolute top-12 lg:-right-20 md:-right-32 -right-20 contrast-150 z-20 opacity-75"
-            />
+            /> */}
           </div>
         </div>
       </div>

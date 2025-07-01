@@ -1,0 +1,311 @@
+[
+  {
+    "image": "https://i.imgur.com/7i3Y6nS.png",
+    "productName": "Ceiling Mounted Cassette Round Flow & Round Flow with Sensing (Optional)",
+    "shortDes": "A ceiling-recessed unit providing 360-degree airflow, ideal for open commercial spaces. Verifiable products exist from Daikin and LG.",
+    "model": ["FXFSQ-ARV1", "ARVI"],
+    "BrandedProduct": [
+      {
+        "brand": "Daikin",
+        "coreFeatures": [
+          "360° round air distribution.",
+          "Intelligent sensing for occupancy, floor temperature, and humidity (on select models).",
+          "Individual flap control with up to 18 distinct airflow patterns.",
+          "Inverter DC fan motor.",
+          "Silver ion-treated drain pan."
+        ],
+        "capabilities": [
+          "Ultra-quiet operation (down to 27 dB(A)).",
+          "High SEER ratings (up to 21).",
+          "Optional auto self-cleaning filter panel.",
+          "Supports flexible 2-way, 3-way, and 4-way flow configurations."
+        ]
+      },
+      {
+        "brand": "LG",
+        "coreFeatures": [
+          "Round design with 6-step crystal vanes for 360° airflow.",
+          "Full-3D fan for powerful air circulation.",
+          "Gyro-sensor based human detection (on select models).",
+          "Low-profile unit height (330 mm).",
+          "Inverter scroll compressor with R-32 refrigerant."
+        ],
+        "capabilities": [
+          "Quiet operation (down to 39 dB(A)).",
+          "Advertised up to 30% faster cooling.",
+          "Smart control via LG ThinQ® app."
+        ]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/xYn92rC.png",
+    "productName": "Slim Ceiling Mounted Duct Type",
+    "shortDes": "An ultra-thin, concealed unit for discreet ducted air conditioning in tight ceiling voids. Verifiable products exist from Daikin and LG.",
+    "model": ["FXDQ-PDV3E", "FXDQ-NDV3E"],
+    "BrandedProduct": [
+      {
+        "brand": "Daikin",
+        "coreFeatures": [
+          "Ultra-slim profile at 7-7/8″ (200 mm).",
+          "Selectable external static pressure (low/med/high).",
+          "Rear or bottom suction configuration.",
+          "Includes a washable filter and a built-in condensate pump."
+        ],
+        "capabilities": [
+          "Ultra-quiet operation (down to 29 dB(A)).",
+          "Compatible with VRV and VRV-S systems.",
+          "Inverter compressor using R-410A refrigerant."
+        ]
+      },
+      {
+        "brand": "LG",
+        "coreFeatures": [
+          "Low-profile (270 mm height) ceiling-concealed design.",
+          "BLDC fan motor with External Static Pressure (ESP) control.",
+          "Selectable rear or bottom air intake.",
+          "Two-thermistor control (at unit and remote)."
+        ],
+        "capabilities": [
+          "Low noise operation.",
+          "Supports group control of multiple units."
+        ]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/zV1nlyg.png",
+    "productName": "Ceiling Mounted Cassette (Double Flow) Type",
+    "shortDes": "A specialized ceiling-recessed unit with two-directional airflow for corridors and long rooms. This is a specialized Daikin product.",
+    "model": ["FXCQ-AVM"],
+    "BrandedProduct": [
+      {
+        "brand": "Daikin",
+        "coreFeatures": [
+          "Two-way airflow for long, narrow spaces.",
+          "Slim design (305 mm height).",
+          "Individual louver control.",
+          "High-lift drain pump included as standard."
+        ],
+        "capabilities": ["Long-life filter included as standard accessory."]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/MDeT6Mh.png",
+    "productName": "Ceiling Mounted Duct Type",
+    "shortDes": "A powerful, concealed unit with high static pressure for extensive ductwork in large zones. Verifiable products exist from Daikin and LG.",
+    "model": ["FXMQ-PBV3E/PVM", "FXMQ-ARV1E", "FXMQ-NVE"],
+    "BrandedProduct": [
+      {
+        "brand": "Daikin",
+        "coreFeatures": [
+          "High External Static Pressure (up to 200 Pa).",
+          "DC fan motor.",
+          "Flexible bottom or rear suction design.",
+          "Standard built-in high-lift drain pump."
+        ],
+        "capabilities": [
+          "High airflow and cooling capacities.",
+          "Supports Building Management System (BMS) integration."
+        ]
+      },
+      {
+        "brand": "LG",
+        "coreFeatures": [
+          "High External Static Pressure (ESP) capability.",
+          "Inverter compressor.",
+          "Spiral duct design for reduced noise."
+        ],
+        "capabilities": [
+          "Wide operating temperature range.",
+          "Optional Wi-Fi control."
+        ]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/jAnj41s.png",
+    "productName": "Ceiling Suspended Type",
+    "shortDes": "An indoor unit that mounts under the ceiling, ideal for spaces without ceiling voids like retail stores. Verifiable products exist from Daikin and LG.",
+    "model": ["FXHQ-MAVE"],
+    "BrandedProduct": [
+      {
+        "brand": "Daikin",
+        "coreFeatures": [
+          "Wide air discharge opening with automatic swing function.",
+          "Anti-mould and anti-bacterial treated air filter.",
+          "Slim design for installation on exposed ceilings."
+        ],
+        "capabilities": [
+          "Suitable for spaces with high ceilings or no ceiling voids."
+        ]
+      },
+      {
+        "brand": "LG",
+        "coreFeatures": [
+          "Powerful airflow with long reach (up to 15m).",
+          "Jet Cool function for rapid cooling.",
+          "Vertical and horizontal auto-swing."
+        ],
+        "capabilities": ["Supports long piping lengths."]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/e4p3f2G.png",
+    "productName": "Wall Mounted Type",
+    "shortDes": "A common ductless indoor unit mounted high on a wall for residential or small office use. Verifiable products exist from Daikin and LG.",
+    "model": ["FXAQ-ARVEB", "ARVM"],
+    "BrandedProduct": [
+      {
+        "brand": "Daikin",
+        "coreFeatures": [
+          "Stylish, flat panel design.",
+          "Coanda airflow technology for draft-free cooling.",
+          "Intelligent Eye sensor (on select models).",
+          "Titanium apatite deodorizing filter."
+        ],
+        "capabilities": ["Ultra-quiet operation.", "Energy savings via sensor."]
+      },
+      {
+        "brand": "LG",
+        "coreFeatures": [
+          "Dual Inverter Compressor.",
+          "Built-in Wi-Fi for LG ThinQ® app control.",
+          "Active Energy Control function.",
+          "4-Way Auto Swing."
+        ],
+        "capabilities": [
+          "Advertised faster cooling.",
+          "Plasmaster™ Ionizer+ for air purification (select models)."
+        ]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/J3tG2pW.png",
+    "productName": "Air Handling Unit",
+    "shortDes": "A large, customizable system for conditioning and circulating air in commercial buildings. This is a core commercial product for Daikin.",
+    "model": [null],
+    "BrandedProduct": [
+      {
+        "brand": "Daikin",
+        "coreFeatures": [
+          "Modular design for customization.",
+          "Thermal-break frames and insulated panels.",
+          "Accommodates multiple filter types (HEPA, bag filters).",
+          "Offers components like heat recovery wheels, coils, and humidifiers."
+        ],
+        "capabilities": [
+          "High energy efficiency and prevention of condensation.",
+          "Supports integration with Building Management Systems (BMS)."
+        ]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/MGB0lEV.png",
+    "productName": "Floor Standing Type",
+    "shortDes": "A powerful, vertical indoor unit that stands on the floor, ideal for large rooms with limited wall space. Verifiable products exist from Daikin and LG.",
+    "model": [null],
+    "BrandedProduct": [
+      {
+        "brand": "Daikin",
+        "coreFeatures": [
+          "Powerful vertical auto-swing.",
+          "Titanium apatite photocatalytic air-purifying filter.",
+          "Dual-position installation (floor or low-wall)."
+        ],
+        "capabilities": ["High airflow rates for large spaces."]
+      },
+      {
+        "brand": "LG",
+        "coreFeatures": [
+          "Powerful, 4-way airflow.",
+          "Dual Inverter Compressor technology.",
+          "Auto-cleaning function."
+        ],
+        "capabilities": [
+          "Advertised up to 40% faster cooling.",
+          "Slim tower design.",
+          "Smart control with built-in Wi-Fi and LG ThinQ® app."
+        ]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/8QW5Z3a.png",
+    "productName": "Daikin VRV System",
+    "shortDes": "A Variable Refrigerant Volume (VRV) system for commercial use, connecting multiple indoor units to a single, highly efficient outdoor unit.",
+    "model": ["VRV X", "VRV IV", "VRV EMERION"],
+    "BrandedProduct": [
+      {
+        "brand": "Daikin",
+        "coreFeatures": [
+          "Variable Refrigerant Temperature (VRT) technology automatically adjusts refrigerant temperature to load.",
+          "Large capacity single outdoor units and modules.",
+          "Hot gas bypass circuit for continuous heating, even during the defrost cycle.",
+          "Advanced inverter compressor with a multi-port refrigerant distribution system."
+        ],
+        "capabilities": [
+          "Connects up to 64 indoor units to a single system.",
+          "Total piping length of up to 3,280 ft (1,000 m).",
+          "High Integrated Energy Efficiency Ratio (IEER) values.",
+          "Wide operating temperature range for extreme climates.",
+          "Advanced system management via Daikin's Intelligent Touch Manager (iTM)."
+        ]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/uGCRw5j.png",
+    "productName": "LG MULTI V System",
+    "shortDes": "A Variable Refrigerant Flow (VRF) system, LG's direct equivalent to VRV, providing zoned climate control for commercial buildings.",
+    "model": ["MULTI V 5", "MULTI V S", "MULTI V i"],
+    "BrandedProduct": [
+      {
+        "brand": "LG",
+        "coreFeatures": [
+          "Ultimate Inverter Compressor with a wide operational range (10-165Hz).",
+          "Dual Sensing Control that senses both temperature and humidity.",
+          "Continuous Heating technology with split coil defrost.",
+          "Ocean Black Fin coating for enhanced corrosion resistance.",
+          "Smart Oil Management system using a sensor for efficient oil return."
+        ],
+        "capabilities": [
+          "Connects up to 64 indoor units.",
+          "High efficiency ratings certified by AHRI 1230.",
+          "Dynamic Defrost technology to minimize defrost cycles.",
+          "Advanced system control with LG MV (Multi V) solutions.",
+          "Large capacity modules up to 22 tons."
+        ]
+      }
+    ]
+  },
+  {
+    "image": "https://i.imgur.com/jQ8fP0L.png",
+    "productName": "Dunham-Bush Air-Cooled Screw Chiller",
+    "shortDes": "A large-tonnage system that chills water using screw compressors, designed for major commercial and industrial applications.",
+    "model": ["ACHELOUS Series (AVX-B, AVX-A)"],
+    "BrandedProduct": [
+      {
+        "brand": "Dunham-Bush",
+        "coreFeatures": [
+          "High-efficiency vertical rotary screw compressors.",
+          "Flooded type evaporator for superior heat transfer efficiency.",
+          "V-coil condenser design for a smaller physical footprint.",
+          "Advanced microprocessor controller (Vision 2020i).",
+          "Electronic expansion valve for precise refrigerant control."
+        ],
+        "capabilities": [
+          "Wide capacity range from 80 to over 500 tons of refrigeration.",
+          "High Integrated Part Load Value (IPLV) ratings.",
+          "Supports R-134a refrigerant.",
+          "Low-noise fan options for sound-sensitive applications.",
+          "Full compatibility with BMS protocols (Modbus, BACnet, LonWorks)."
+        ]
+      }
+    ]
+  }
+]

@@ -10,53 +10,53 @@ import {
   DialogTrigger,
 } from "../../components/ui/dialog";
 
-export function ModalButton({ text = "See more" }) {
+export function ModalButton({ image, model, BrandedProduct, productName }) {
   return (
     <Dialog>
       <form>
         <DialogTrigger asChild>
           <Button
             variant="outline"
-            className={`${
-              text == "See more" ? "w-full" : ""
-            } rounded-lg hover:bg-blue-600 py-5 bg-[#212121] duration-300 transition-all hover:text-white cursor-pointer`}
+            className={`w-full rounded-lg hover:bg-blue-600 py-5 bg-[#212121] duration-300 transition-all hover:text-white cursor-pointer`}
           >
-            {text}
+            See more
           </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px] max-h-[80vh] overflow-y-auto">
           <DialogHeader>
-            <DialogDescription>
-              <div
-                className="object-cover rounded-2xl w-full h-[10rem] mb-2 bg-black/10"
-                // src={e.image}
-                // alt="Shoes"
-              />
-              <DialogTitle className={"text-black"}>Diakin</DialogTitle>
-              <DialogDescription className="text-black">
-                Product info
+            <div
+              className="object-cover rounded-2xl w-full h-[10rem] mb-2 bg-black/10"
+              // src={e.image}
+              // alt="Shoes"
+            />
+            <h1 className="text-xl font-semibold">{productName}</h1>
+            {BrandedProduct.map((e) => (
+              <DialogDescription className="border border-black/10 p-3 rounded-md">
+                <DialogTitle className={"text-black text-2xl"}>
+                  {e?.brand}
+                </DialogTitle>
+                <h1 className="mt-2 text-black">Models:</h1>
+                <div className="flex gap-3 text-black">
+                  {model.map((e, index) => (
+                    <h1 key={index}>{e}</h1>
+                  ))}
+                </div>
+                <DialogDescription className="text-black">
+                  <h1 className="mt-2 text-lg font-semibold">Features:</h1>
+                  <ul>
+                    {e?.coreFeatures.map((e) => (
+                      <li className="list-decimal list-inside">{e}</li>
+                    ))}
+                  </ul>
+                  <h1 className="mt-2 text-lg font-semibold">Capabilities</h1>
+                  <ul>
+                    {e?.capabilities.map((e) => (
+                      <li className="list-decimal list-inside">{e}</li>
+                    ))}
+                  </ul>
+                </DialogDescription>
               </DialogDescription>
-
-              <div
-                className="object-cover rounded-2xl w-full h-[10rem] mb-2 mt-10 bg-black/10"
-                // src={e.image}
-                // alt="Shoes"
-              />
-              <DialogTitle className={"text-black"}>LG</DialogTitle>
-              <DialogDescription className="text-black">
-                Product info
-              </DialogDescription>
-
-              <div
-                className="object-cover rounded-2xl w-full h-[10rem] mb-2 mt-10 bg-black/10"
-                // src={e.image}
-                // alt="Shoes"
-              />
-              <DialogTitle className={"text-black"}>LG</DialogTitle>
-              <DialogDescription className="text-black">
-                Product info
-              </DialogDescription>
-            </DialogDescription>
+            ))}
           </DialogHeader>
           <DialogFooter>
             <DialogClose asChild>

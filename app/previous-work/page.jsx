@@ -17,70 +17,87 @@ export default function work() {
     {
       place: "QA Tower, Banani",
       image: "/w1.jpg",
+      product: "417 TR, DAIKAN VRV Air Conditioning System ",
     },
     {
       place: "Tusuka Fashion MD's Residence, Nikunjo",
       image: "/w2.jpg",
+      product: "53 TR, DAIKIN Air Conditioning S",
     },
     {
       place: "Banglalink Call Centre, Uttara",
       image: "/w3.jpg",
+      product: "150 TR,ACSON Air Cooled Chiller",
     },
     {
       place: "South East Sweaters, Dakkin Khan",
       image: "/w4.png",
+      product: "400 TR, DAIKIN Air Cooled chiller",
     },
     {
       place: "Rangdhanu Media Limited, Gulshan",
       image: "/w6.png",
+      product: "122TR, DAIKIN Air cooled Chiller",
     },
     {
       place: "British Council Dhaka, Fuller Road",
       image: "/w7.png",
+      product: "d 110 TR, DAIKIN VRV Air conditioning System",
     },
     {
       place: "Cassiopea Sweaters Ltd. Elegant, Gazipur",
       image: "/w9.png",
+      product: "400 TR DAIKIN Air Cooled chiller",
     },
     {
       place: "Afroza Begum Shoily Residence, Gulshan 2",
       image: "/w10.png",
+      product: "77 TR, DAIKIN VRV Air Conditioning System",
     },
     {
       place: "Standard Chartered Bank all branches",
       image: "/w11.png",
+      product: "350TR, DAIKIN VRV Air Conditioning System",
     },
     {
       place: "Palmal Tower, Gulshan 1",
       image: "/w12.png",
+      product: "471 TR,DAIKIN VRV Air Conditioning System",
     },
     {
       place: "Hadi Tower, Gulshan 2",
       image: "/w13.png",
+      product: "368 TR, DAIKIN VRV Air Conditioning Conditioning System",
     },
     {
       place: "IUB Auditorium, Bashundhara",
       image: "/w15.png",
+      product: "70 TR, DAIKIN Air Cooled Chiller",
     },
     {
       place: "Arham Tower, Uttara",
       image: "/w16.png",
+      product: "308 TR, DAIKIN VRV Air Conditioning System",
     },
     {
       place: "Arcadia Shopping Mall, Sylhet",
       image: "/w17.png",
+      product: "150 TR, DAIKIN VRV Air Conditioning System",
     },
     {
       place: "Sheikh Hasina Software & Technology Park, Jessore",
       image: "/w8.png",
+      product: "DAIKIN VRV Air conditioning System",
     },
     {
       place: "Yokohama Labels & Printing (BD) Co. Ltd., Narayanganj",
       image: "/w5.png",
+      product: "105TR, DAIKIN Air CooledChiller",
     },
     {
       place: "Ali Ahmed Chunka Auditorium, Narayanganj",
       image: "/w14.png",
+      product: "164 TR, DAIKIN VRV Air Conditioning System",
     },
   ];
 
@@ -205,6 +222,9 @@ export default function work() {
                 className={`p-4 text-black flex flex-col justify-between`}
               >
                 <h2 className="">{e.place}</h2>
+                <h2 className="border border-black/15 p-2 mt-2 rounded-xl">
+                  <span className="font-semibold">Product:</span> {e.product}
+                </h2>
               </div>
             </div>
           ))}
