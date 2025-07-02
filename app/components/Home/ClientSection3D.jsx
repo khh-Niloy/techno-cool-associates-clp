@@ -41,19 +41,21 @@ export default function ClientSection3D() {
     "/iub.jpg",
   ];
   return (
-    <div className="w-[80%] mx-auto mt-10 pb-12">
-      <PageTitle
-        headTitle={"Our Valued Clients"}
-        subTitle={
-          "We are proud to have partnered with leading organizations, including banglalink, Standard Chartered, Dabur, DESHBANDHU GROUP, Bangladesh Biman Bahini, and many more."
-        }
-      />
+    <>
+      <div className="w-[80%] mx-auto mt-10 pb-12">
+        <PageTitle
+          headTitle={"Our Valued Clients"}
+          subTitle={
+            "We are proud to have partnered with leading organizations, including banglalink, Standard Chartered, Dabur, DESHBANDHU GROUP, Bangladesh Biman Bahini, and many more."
+          }
+        />
 
-      <div
-        className={`mx-auto my-10 rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800`}
-      >
-        <ThreeDMarquee images={images} />
+        <div
+          className={`mx-auto my-10 rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800`}
+        >
+          <ThreeDMarquee images={images} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
