@@ -5,26 +5,27 @@ import LocalBusinessSEO from "../components/LocalBusinessSEO";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Contact Us | Techno Cool Associates",
+  title: "Contact Us | HVAC Experts in Bangladesh | Techno Cool Associates",
   description:
-    "Get in touch with Techno Cool Associates, your trusted HVAC partner in Bangladesh. Reach out for inquiries, quotes, and expert HVAC solutions in Dhaka and across Bangladesh.",
+    "Contact Techno Cool Associates for expert HVAC solutions in Bangladesh. Whether it's VRF/VRV systems, Daikin, LG, or industrial cooling—reach out for professional consultation, quotes, and support.",
   keywords:
-    "Contact Techno Cool, HVAC inquiries Bangladesh, HVAC quotes Dhaka, HVAC services contact, HVAC support Bangladesh, commercial HVAC contact, industrial HVAC inquiries",
+    "Contact Techno Cool Associates, HVAC contact Bangladesh, VRF VRV consultation, Daikin dealer Bangladesh, HVAC support Dhaka, HVAC services quote, industrial AC Bangladesh, LG HVAC Bangladesh",
   openGraph: {
-    title: "Contact Us | Techno Cool Associates",
+    title: "Contact Techno Cool Associates | HVAC Services Bangladesh",
     description:
-      "Get in touch with Techno Cool Associates, your trusted HVAC partner in Bangladesh. Reach out for inquiries, quotes, and expert HVAC solutions in Dhaka and across Bangladesh.",
+      "Get in touch with Techno Cool Associates — trusted specialists in HVAC, VRF/VRV, Daikin, LG systems, and industrial air conditioning solutions in Bangladesh.",
     url: "https://techno-cool-associates-clp.vercel.app/contact",
     images: {
-      url: "/seoImg.png",
+      url: "https://techno-cool-associates-clp.vercel.app/seoImg.png",
     },
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us | Techno Cool Associates",
+    title: "Contact Us | HVAC Specialists Bangladesh | Techno Cool Associates",
     description:
-      "Get in touch with Techno Cool Associates, your trusted HVAC partner in Bangladesh. Reach out for inquiries, quotes, and expert HVAC solutions in Dhaka and across Bangladesh.",
-    images: "/contact-seo-image.png",
+      "Need expert HVAC support or quotes? Contact Techno Cool Associates, your trusted partner for VRF, VRV, Daikin, LG, and industrial cooling systems.",
+    images:
+      "https://techno-cool-associates-clp.vercel.app/contact-seo-image.png",
   },
 };
 
@@ -77,22 +78,25 @@ export default function contact() {
           "https://www.linkedin.com/yourpage",
         ]}
       />
-      <div className="py-6 sm:py-8 md:py-12">
+      <section className="py-6 sm:py-8 md:py-12">
         <PageTitle
-          width={"85%"}
-          headTitle={"Contact Us"}
-          subTitle={
-            "Have questions or concerns? We're here to help. Reach out to our team through any of the channels below."
-          }
+          width="85%"
+          headTitle="Contact Us"
+          subTitle="Have questions or concerns? We're here to help. Reach out to our team through any of the channels below."
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-5">
-          <div className="grid grid-cols-1  lg:grid-cols-2 gap-8">
-            <div className=" rounded-lg px-8 ">
-              <h2 className="text-2xl font-bold text-black mb-6 relative inline-block">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Contact Form Section */}
+            <article
+              className="rounded-lg px-8"
+              itemScope
+              itemType="https://schema.org/ContactPage"
+            >
+              <h2 className="text-2xl font-bold text-black mb-6">
                 Send us a Message
               </h2>
-              <form className="space-y-6">
+              <form className="space-y-6" method="POST">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                   <div>
                     <label
@@ -104,8 +108,9 @@ export default function contact() {
                     <input
                       type="text"
                       id="firstName"
-                      className="mt-1 block w-full px-3 py-2 bg-white
-                       rounded-md shadow-sm text-black placeholder-gray-500  focus:outline-blue-500"
+                      name="firstName"
+                      required
+                      className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 focus:outline-blue-500"
                       placeholder="Enter your first name"
                     />
                   </div>
@@ -119,7 +124,9 @@ export default function contact() {
                     <input
                       type="text"
                       id="lastName"
-                      className="mt-1 block w-full px-3 py-2 bg-[white] rounded-md shadow-sm text-white placeholder-gray-500   transition-colors duration-200 focus:outline-blue-500"
+                      name="lastName"
+                      required
+                      className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 focus:outline-blue-500"
                       placeholder="Enter your last name"
                     />
                   </div>
@@ -135,7 +142,9 @@ export default function contact() {
                   <input
                     type="email"
                     id="email"
-                    className="mt-1 block w-full px-3 py-2 bg-[white] rounded-md shadow-sm text-black placeholder-gray-500  transition-colors duration-200 focus:outline-blue-500"
+                    name="email"
+                    required
+                    className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 focus:outline-blue-500"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -148,9 +157,11 @@ export default function contact() {
                     Subject
                   </label>
                   <input
-                    type="email"
-                    id="email"
-                    className="mt-1 block w-full px-3 py-2 bg-[white] rounded-md shadow-sm text-black placeholder-gray-500  transition-colors duration-200 focus:outline-blue-500"
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 focus:outline-blue-500"
                     placeholder="Enter your subject"
                   />
                 </div>
@@ -164,8 +175,10 @@ export default function contact() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
-                    className="mt-1 block w-full px-3 py-2 bg-[white] rounded-md shadow-sm text-black placeholder-gray-500  transition-colors duration-200 resize-none focus:outline-blue-500"
+                    required
+                    className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 resize-none focus:outline-blue-500"
                     placeholder="Enter your message here..."
                   ></textarea>
                 </div>
@@ -176,9 +189,14 @@ export default function contact() {
                   </Button>
                 </div>
               </form>
-            </div>
+            </article>
 
-            <div className="space-y-8">
+            {/* Contact Info Section */}
+            <aside
+              className="space-y-8"
+              itemScope
+              itemType="https://schema.org/Organization"
+            >
               <div className="bg-[red]/6 border border-red-300 rounded-lg p-6 shadow-lg shadow-red-900/5">
                 <div className="flex items-center gap-3 mb-3">
                   <svg
@@ -202,103 +220,100 @@ export default function contact() {
                 <p className="text-red-500">
                   For immediate assistance in case of emergency, please call:
                 </p>
-                <p className="text-3xl font-bold text-red-500 mt-2">
+                <p
+                  className="text-3xl font-bold text-red-500 mt-2"
+                  itemProp="telephone"
+                >
                   01762625960-99
                 </p>
               </div>
 
-              <div className="bg-blue-50/10 border border-gray-500/10 rounded-lg p-6  shadow-lg backdrop-blur-sm">
-                <h3 className="text-lg font-semibold text-black mb-4 relative inline-block">
+              <div className="bg-blue-50/10 border border-gray-500/10 rounded-lg p-6 shadow-lg backdrop-blur-sm">
+                <h3 className="text-lg font-semibold text-black mb-4">
                   Office Information
                 </h3>
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-blue-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 text-blue-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
                     <div className="ml-3">
                       <p className="text-black font-medium">Address</p>
-                      <p className="text-black/90 mt-1">
+                      <p className="text-black/90 mt-1" itemProp="address">
                         Century Centre, Level # 09, Kha 225, Pragati sarani,
-                        Merul Badda, Dhaka-1212,
+                        Merul Badda, Dhaka-1212, Bangladesh
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start">
-                    <div className="flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-blue-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 text-blue-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
                     <div className="ml-3">
                       <p className="text-black font-medium">Email</p>
-                      <p className="text-black/90 mt-1">
+                      <p className="text-black/90 mt-1" itemProp="email">
                         technocool.bd@gmail.com
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start">
-                    <div className="flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 text-blue-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                        />
-                      </svg>
-                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 text-blue-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
                     <div className="ml-3">
                       <p className="text-black font-medium">Phone</p>
-                      <p className="text-black/90 mt-1">
-                        +880255055121 +8801762625960-99
+                      <p className="text-black/90 mt-1" itemProp="telephone">
+                        +880255055121, +8801762625960-99
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </aside>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

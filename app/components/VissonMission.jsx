@@ -9,7 +9,7 @@ export default function VissonMission({
   gradient,
 }) {
   return (
-    <div
+    <section
       className={`p-5 ${color} rounded-lg hover:scale-[1.03] duration-300 transition-all`}
     >
       <div className="flex justify-start items-center gap-2">
@@ -28,6 +28,6 @@ export default function VissonMission({
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }

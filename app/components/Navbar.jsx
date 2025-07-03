@@ -8,9 +8,9 @@ export default function Navbar() {
   const navItems = [
     { item: "Home", link: "/" },
     { item: "Products", link: "/products" },
-    { item: "About", link: "/about" },
-    { item: "Previous work", link: "/previous-work" },
-    { item: "Contact ", link: "/contact" },
+    { item: "About Us", link: "/about" },
+    { item: "Previous Work", link: "/previous-work" },
+    { item: "Contact Us", link: "/contact" },
   ];
   const pathname = usePathname();
   const [header, setheader] = useState(false);
@@ -83,6 +83,7 @@ export default function Navbar() {
             </svg>
           </div>
           <ul
+            aria-label="Main Navigation"
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow "
           >

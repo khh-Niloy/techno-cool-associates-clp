@@ -10,26 +10,32 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Home | Techno Cool Associates",
+  title: "HVAC Experts in Bangladesh | Techno Cool Associates",
   description:
-    "Bangladesh’s trusted HVAC engineering firm with 20+ years of experience. Experts in Daikin, LG & DB air conditioning systems for industrial and corporate clients.",
+    "Techno Cool Associates is a leading HVAC engineering company in Bangladesh with over 20 years of experience. We specialize in VRF/VRV systems, chillers, central AC, and energy-efficient air conditioning solutions for industrial and corporate clients.",
   keywords:
-    "Techno Cool Associates, HVAC company Bangladesh, 20+ years of experience, HVAC contractors Dhaka, commercial air conditioning Bangladesh, industrial HVAC solutions BD, Daikin dealer Bangladesh, LG AC distributor Dhaka, VRF VRV system Bangladesh, air cooled chiller Bangladesh, HVAC installation Dhaka, HVAC engineering firm BD, top HVAC companies in Bangladesh",
+    "HVAC Bangladesh, VRF VRV systems, Daikin dealer Bangladesh, LG AC distributor Dhaka, DB air conditioning, HVAC engineering firm BD, commercial HVAC Dhaka, industrial HVAC solutions, air conditioning contractors Bangladesh, top HVAC companies in Dhaka, HVAC installation, HVAC maintenance BD, air cooled chillers, central air conditioning, FCU, AHU Bangladesh",
   openGraph: {
-    title: "Home | Techno Cool Associates",
+    title: "HVAC Solutions in Bangladesh | Techno Cool Associates",
     description:
-      "Bangladesh’s trusted HVAC engineering firm with 20+ years of experience. Experts in Daikin, LG & DB air conditioning systems for industrial and corporate clients.",
+      "Explore top-tier HVAC engineering with Techno Cool Associates. Trusted experts in Daikin, LG & DB VRF/VRV systems, central AC, chillers, and commercial air conditioning across Bangladesh.",
     url: "https://techno-cool-associates-clp.vercel.app",
+    type: "website",
+    locale: "en_US",
+    site_name: "Techno Cool Associates",
     images: {
-      url: "/seoImg.png",
+      url: "https://techno-cool-associates-clp.vercel.app/seoImg.png",
+      width: 1200,
+      height: 630,
+      alt: "Techno Cool Associates - HVAC Engineering Firm in Bangladesh",
     },
   },
   twitter: {
     card: "summary_large_image",
-    title: "Home | Techno Cool Associates",
+    title: "HVAC Engineering Experts | Techno Cool Associates",
     description:
-      "Bangladesh’s trusted HVAC engineering firm with 20+ years of experience. Experts in Daikin, LG & DB air conditioning systems for industrial and corporate clients.",
-    images: "/seoImg.png",
+      "Discover why Techno Cool Associates is Bangladesh’s most trusted HVAC company for VRF/VRV, Daikin, LG, DB air conditioning and industrial cooling systems.",
+    images: ["https://techno-cool-associates-clp.vercel.app/seoImg.png"],
   },
 };
 
@@ -52,7 +58,7 @@ export default function RootLayout({ children }) {
         <meta
           property="og:image"
           content={
-            metadata.openGraph.images.url.startsWith("http")
+            metadata.openGraph.images?.url?.startsWith("http")
               ? metadata.openGraph.images.url
               : `${metadata.openGraph.url}${metadata.openGraph.images.url}`
           }
@@ -66,7 +72,7 @@ export default function RootLayout({ children }) {
         <meta
           name="twitter:image"
           content={
-            metadata.openGraph.images.url.startsWith("http")
+            metadata.openGraph.images?.url?.startsWith("http")
               ? metadata.openGraph.images.url
               : `${metadata.openGraph.url}${metadata.openGraph.images.url}`
           }

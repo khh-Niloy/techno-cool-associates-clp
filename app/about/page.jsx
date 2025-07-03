@@ -1,5 +1,4 @@
 import React from "react";
-import { FaUserTie } from "react-icons/fa";
 import VissonMission from "../components/VissonMission";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -10,17 +9,18 @@ import { FaEye } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa6";
 import Head from "next/head";
 import LocalBusinessSEO from "../components/LocalBusinessSEO";
+import Image from "next/image";
 
 export const metadata = {
-  title: "About Us | Techno Cool Associates",
+  title: "About Us | HVAC, VRF, VRV Experts | Techno Cool Associates",
   description:
-    "Learn about Techno Cool Associates, your trusted HVAC partner in Bangladesh, offering expert HVAC engineering, installation, and maintenance services across Dhaka and beyond.",
+    "Learn about Techno Cool Associates, Bangladesh’s trusted HVAC engineering company specializing in VRF, VRV, Daikin, LG, DB air conditioning systems, chillers, ducts, central AC, FCUs, AHUs, and industrial air conditioning services.",
   keywords:
-    "About Techno Cool, HVAC company Bangladesh, HVAC engineering Dhaka, HVAC installation services Bangladesh, trusted HVAC partner Dhaka, HVAC maintenance Bangladesh, commercial HVAC company, industrial HVAC solutions Bangladesh",
+    "HVAC, VRF, VRV, Daikin, LG, DB, AC, Air Conditioning, Chiller, Duct, Industrial AC, Central AC, FCU, AHU, Commercial Air Conditioning, Fresh Air, HVAC Bangladesh, HVAC Dhaka, VRF systems, VRV Bangladesh, Daikin HVAC dealer",
   openGraph: {
-    title: "About Us | Techno Cool Associates",
+    title: "About Us | Techno Cool Associates | HVAC Bangladesh",
     description:
-      "Learn about Techno Cool Associates, your trusted HVAC partner in Bangladesh, offering expert HVAC engineering, installation, and maintenance services across Dhaka and beyond.",
+      "Meet Techno Cool Associates — leaders in HVAC, VRF/VRV systems, and air conditioning solutions in Bangladesh. Trusted partner for Daikin, LG, DB, chillers, ducts, and commercial AC.",
     url: "https://techno-cool-associates-clp.vercel.app/about",
     images: {
       url: "/seoImg.png",
@@ -28,9 +28,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us | Techno Cool Associates",
+    title: "About Us | HVAC, VRF, Chiller Experts | Techno Cool Associates",
     description:
-      "Learn about Techno Cool Associates, your trusted HVAC partner in Bangladesh, offering expert HVAC engineering, installation, and maintenance services across Dhaka and beyond.",
+      "Bangladesh’s leading HVAC engineering firm specializing in VRF/VRV systems, Daikin, LG, and DB air conditioning, chillers, FCU, AHU, and duct systems.",
     images: "/seoImg.png",
   },
 };
@@ -127,29 +127,36 @@ export default function about() {
         ]}
       />
 
-      <div className="py-16 w-[80%] mx-auto">
-        <div className="flex flex-col items-center justify-center mb-10">
-          <h1 className="lg:text-3xl text-2xl text-black font-bold">
+      <main className="py-16 w-[80%] mx-auto">
+        <section className="flex flex-col items-center justify-center mb-10">
+          <h2 className="lg:text-3xl text-2xl text-black font-bold">
             Who We Are
-          </h1>
+          </h2>
           <div className="text-left mt-3">
             <p className="lg:text-lg text-sm mt-2">
               TECHNO COOL ASSOCIATES is a leading engineering company in
-              Bangladesh giving the best and comprehensive commercial HVAC
-              (Heating, Ventilation and Air-Condition) solutions since 2003.
+              Bangladesh delivering comprehensive commercial{" "}
+              <strong>HVAC</strong> (Heating, Ventilation, and Air Conditioning)
+              solutions since 2003. We specialize in cutting-edge{" "}
+              <strong>Commercial Air Conditioning</strong> and{" "}
+              <strong>Industrial AC</strong> systems tailored for modern
+              commercial and industrial facilities.
             </p>
+
             <p className="lg:text-lg text-sm mt-2">
-              We expertise in design & drawing, consultancy, supply &
-              installation support and after sales & maintenance in the field of
-              HVAC. Products of supreme quality are imported from world renowned
-              manufacturers to satisfy the requirement of project owners and
-              technical personnel.
+              Our services span design & drawing, consultancy, supply &
+              installation, and after-sales maintenance, ensuring end-to-end
+              support for all HVAC needs. We also offer high-performance{" "}
+              <strong>Fresh Air Systems</strong> to enhance indoor air quality
+              and energy efficiency in your facilities. All our products come
+              from world-renowned manufacturers, meeting the highest standards
+              for quality and reliability.
             </p>
 
             <div className="p-3 px-5 rounded-xl bg-[#F2F2F3] mb-3 mt-5">
-              <h1 className="text-lg font-medium">
+              <h2 className="text-lg font-medium">
                 A Message from Our Chief Executive:
-              </h1>
+              </h2>
               <ul className="list-disc list-inside mt-1">
                 {message.map((e, index) => (
                   <li className="lg:text-lg text-sm" key={index}>
@@ -159,11 +166,11 @@ export default function about() {
               </ul>
             </div>
           </div>
-        </div>
+        </section>
 
         <div className="flex flex-col items-center justify-center mt-16">
           <h1 className="lg:text-3xl text-2xl text-black font-bold">
-            Our Mission, Vision, & Values
+            We’re a Trusted Name in HVAC Engineering
           </h1>
           <p className="lg:text-sm text-xs text-center mt-2">
             Discover the core principles that drive our business and define our
@@ -171,7 +178,7 @@ export default function about() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
+        <section className="grid lg:grid-cols-3 grid-cols-1 gap-5">
           <VissonMission
             color={"bg-[#06b6d4]/6"}
             headText={"Mission"}
@@ -212,85 +219,98 @@ export default function about() {
             icon={<FaHandshake className="text-2xl" />}
             gradient={"bg-gradient-to-br from-[#22c55e] to-green-300"}
           />
-        </div>
+        </section>
 
         <ClientSection3D />
 
-        <div className="flex flex-col text-center justify-center mb-10 pt-8 ">
-          <h1 className="lg:text-3xl text-2xl text-black font-bold">
+        <section className="flex flex-col text-center justify-center mb-10 pt-8 ">
+          <h2 className="lg:text-3xl text-2xl text-black font-bold">
             Our Expertise & Services
-          </h1>
+          </h2>
 
           <div className="text-left mt-10">
-            <h1 className="text-lg font-semibold">Authorized Dealers</h1>
-            <p>
-              We are authorized dealers for DAIKIN (JAPAN) , LG (SOUTH KOREA) ,
-              and DB (USA)
-            </p>
+            <h2 className="text-lg font-semibold">Authorized Dealers</h2>
+            <h1>
+              We are authorized dealers for <strong>DAIKIN (JAPAN)</strong> ,{" "}
+              <strong strong>LG (SOUTH KOREA)</strong> , and{" "}
+              <strong>DB (USA)</strong>
+            </h1>
             <div className="flex gap-5">
-              <div>
-                <img
-                  src="/daikin.png"
-                  className="w-36 border border-black/10 px-3 rounded-md mt-3"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="/lg.png"
-                  className="w-28 border border-black/10 px-3 rounded-md mt-3"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="/usa.png"
-                  className="w-28 border border-black/10 px-3 rounded-md mt-3"
-                  alt=""
-                />
-              </div>
+              <Image
+                src="/daikin.png"
+                alt="Daikin HVAC Authorized Dealer in Bangladesh"
+                title="Daikin HVAC Authorized Dealer in Bangladesh"
+                width={150}
+                height={80}
+                className="w-36 border border-black/10 px-3 rounded-md mt-3"
+              />
+              <Image
+                src="/lg.png"
+                alt="LG Air Conditioning Systems Dealer Bangladesh"
+                title="LG Air Conditioning Systems Dealer Bangladesh"
+                width={130}
+                height={70}
+                className="w-28 border border-black/10 px-3 rounded-md mt-3"
+              />
+              <Image
+                src="/usa.png"
+                alt="DB HVAC Products Supplier Bangladesh"
+                title="DB HVAC Products Supplier Bangladesh"
+                width={130}
+                height={70}
+                className="w-28 border border-black/10 px-3 rounded-md mt-3"
+              />
             </div>
           </div>
 
-          <div className="text-left mt-10">
-            <h1 className="text-lg font-semibold">Awards & Certifications</h1>
+          <section className="text-left mt-10">
+            <h2 className="text-lg font-semibold">Awards & Certifications</h2>
             <p>
               Our commitment to excellence is recognized by our partners,
               demonstrated through our various dealer certificates and awards.
             </p>
             <div className="flex flex-col gap-5">
               <div className="lg:w-[80%] w-[90%]">
-                <img
+                <Image
                   src="/aw1.png"
+                  alt="Techno Cool Associates receives Daikin Best Dealer Award"
+                  title="Techno Cool Associates receives Daikin Best Dealer Award"
+                  width={800}
+                  height={400}
                   className="w-full object-cover mt-3"
-                  alt=""
                 />
               </div>
               <div className="lg:w-[80%] w-[90%]">
-                <img
+                <Image
                   src="/aw2.png"
+                  alt="Daikin Authorized Dealer Recognition for Techno Cool Associates"
+                  title="Daikin Authorized Dealer Recognition for Techno Cool Associates"
+                  width={800}
+                  height={400}
                   className="w-full object-cover mt-3"
-                  alt=""
                 />
               </div>
               <div className="lg:w-[80%] w-[90%]">
-                <img
+                <Image
                   src="/certificates.png"
+                  alt="Daikin, LG, DB Authorized Dealer certificate of dealership for Techno Cool Associates"
+                  title="Daikin, LG, DB Authorized Dealer certificate of dealership for Techno Cool Associates"
+                  width={800}
+                  height={400}
                   className="w-full object-cover mt-3"
-                  alt=""
                 />
               </div>
             </div>
-          </div>
+          </section>
 
-          <div className="mt-14">
+          <section className="mt-14">
             <PageTitle
               headTitle={"Consultants We Worked With"}
               subTitle={"Our Esteemed Consulting Partners Across Key Projects"}
             />
-          </div>
+          </section>
 
-          <div className="overflow-x-auto">
+          <section className="overflow-x-auto">
             <table className="table">
               <thead>
                 <tr className="text-black font-medium">
@@ -309,17 +329,17 @@ export default function about() {
                 ))}
               </tbody>
             </table>
-          </div>
+          </section>
 
-          <div className="text-left mt-10">
-            <h1 className="text-lg font-semibold">Our Impact</h1>
+          <section className="text-left mt-10">
+            <h2 className="text-lg font-semibold">Our Impact</h2>
             <p>
               We have successfully completed more than 100+ Completed Projects,
               20+ Years of Expertise since the inception of our company.
             </p>
-          </div>
+          </section>
 
-          <div className="mt-10 flex gap-3 justify-center">
+          <section className="mt-10 flex gap-3 justify-center">
             <Link href={"/previous-work"}>
               <Button className="bg-blue-600 hover:bg-blue-700 cursor-pointer">
                 View Our Projects
@@ -330,9 +350,9 @@ export default function about() {
                 Contact Us Today
               </Button>
             </Link>
-          </div>
-        </div>
-      </div>
+          </section>
+        </section>
+      </main>
     </>
   );
 }

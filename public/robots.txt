@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://techno-cool-associates-clp.vercel.app
+
+# Sitemaps
+Sitemap: https://techno-cool-associates-clp.vercel.app/sitemap.xml
