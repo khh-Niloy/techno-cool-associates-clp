@@ -1,83 +1,46 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
-import React from "react";
+import React, { useRef, useState } from "react";
 import PageTitle from "../components/PageTitle";
 import LocalBusinessSEO from "../components/LocalBusinessSEO";
-import Head from "next/head";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
-export const metadata = {
-  title: "Contact Us | HVAC Experts in Bangladesh | Techno Cool Associates",
-  description:
-    "Contact Techno Cool Associates for expert HVAC solutions in Bangladesh. Whether it's VRF/VRV systems, Daikin, LG, or industrial cooling—reach out for professional consultation, quotes, and support.",
-  keywords:
-    "Contact Techno Cool Associates, HVAC contact Bangladesh, VRF VRV consultation, Daikin dealer Bangladesh, HVAC support Dhaka, HVAC services quote, industrial AC Bangladesh, LG HVAC Bangladesh",
-  openGraph: {
-    title: "Contact Techno Cool Associates | HVAC Services Bangladesh",
-    description:
-      "Get in touch with Techno Cool Associates — trusted specialists in HVAC, VRF/VRV, Daikin, LG systems, and industrial air conditioning solutions in Bangladesh.",
-    url: "https://techno-cool-associates-clp.vercel.app/contact",
-    images: {
-      url: "https://techno-cool-associates-clp.vercel.app/seoImg.png",
-    },
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact Us | HVAC Specialists Bangladesh | Techno Cool Associates",
-    description:
-      "Need expert HVAC support or quotes? Contact Techno Cool Associates, your trusted partner for VRF, VRV, Daikin, LG, and industrial cooling systems.",
-    images:
-      "https://techno-cool-associates-clp.vercel.app/contact-seo-image.png",
-  },
-};
+// template_fp7yniu
 
 export default function contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_0ovaa67", "template_fp7yniu", form.current, {
+        publicKey: "2lnxgrL-gZWZCnyVy",
+      })
+      .then(
+        () => {
+          toast.success("Your message has been sent successfully");
+          e.target.reset();
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          toast.error("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <>
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <link rel="canonical" href={metadata.openGraph.url} />
-        <meta name="robots" content="index, follow" />
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content={
-            metadata.openGraph.images.url.startsWith("http")
-              ? metadata.openGraph.images.url
-              : `${metadata.openGraph.url}${metadata.openGraph.images.url}`
-          }
-        />
-        <meta property="og:url" content={metadata.openGraph.url} />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metadata.title} />
-        <meta name="twitter:description" content={metadata.description} />
-        <meta
-          name="twitter:image"
-          content={
-            metadata.openGraph.images.url.startsWith("http")
-              ? metadata.openGraph.images.url
-              : `${metadata.openGraph.url}${metadata.openGraph.images.url}`
-          }
-        />
-      </Head>
-
-      <LocalBusinessSEO
-        url={metadata.openGraph.url}
-        phone="+8801XXXXXXXXX"
-        image="/seoImg.png"
-        sameAs={[
-          "https://www.facebook.com/yourpage",
-          "https://www.linkedin.com/yourpage",
-        ]}
-      />
       <section className="py-6 sm:py-8 md:py-12">
         <PageTitle
           width="85%"
@@ -96,40 +59,26 @@ export default function contact() {
               <h2 className="text-2xl font-bold text-black mb-6">
                 Send us a Message
               </h2>
-              <form className="space-y-6" method="POST">
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <div>
-                    <label
-                      htmlFor="firstName"
-                      className="block text-sm font-medium text-black"
-                    >
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      required
-                      className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 focus:outline-blue-500"
-                      placeholder="Enter your first name"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="lastName"
-                      className="block text-sm font-medium text-black"
-                    >
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      required
-                      className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 focus:outline-blue-500"
-                      placeholder="Enter your last name"
-                    />
-                  </div>
+              <form ref={form} onSubmit={sendEmail} className="space-y-6">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-black"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    className="mt-1 w-full block px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 focus:outline-blue-500"
+                    placeholder="Enter your name"
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
+                  />
                 </div>
 
                 <div>
@@ -146,6 +95,10 @@ export default function contact() {
                     required
                     className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 focus:outline-blue-500"
                     placeholder="Enter your email"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                   />
                 </div>
 
@@ -163,6 +116,10 @@ export default function contact() {
                     required
                     className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 focus:outline-blue-500"
                     placeholder="Enter your subject"
+                    value={formData.subject}
+                    onChange={(e) =>
+                      setFormData({ ...formData, subject: e.target.value })
+                    }
                   />
                 </div>
 
@@ -180,6 +137,10 @@ export default function contact() {
                     required
                     className="mt-1 block w-full px-3 py-2 bg-white rounded-md shadow-sm text-black placeholder-gray-500 resize-none focus:outline-blue-500"
                     placeholder="Enter your message here..."
+                    value={formData.message}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                   ></textarea>
                 </div>
 
