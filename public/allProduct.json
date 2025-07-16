@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "image": "https://i.imgur.com/7i3Y6nS.png",
     "productName": "Ceiling Mounted Cassette Round Flow & Round Flow with Sensing (Optional)",
     "shortDes": "A ceiling-recessed unit providing 360-degree airflow, ideal for open commercial spaces. Verifiable products exist from Daikin and LG.",
@@ -39,6 +40,7 @@
     ]
   },
   {
+    "id": "2",
     "image": "https://i.imgur.com/xYn92rC.png",
     "productName": "Slim Ceiling Mounted Duct Type",
     "shortDes": "An ultra-thin, concealed unit for discreet ducted air conditioning in tight ceiling voids. Verifiable products exist from Daikin and LG.",
@@ -74,6 +76,7 @@
     ]
   },
   {
+    "id": "3",
     "image": "https://i.imgur.com/zV1nlyg.png",
     "productName": "Ceiling Mounted Cassette (Double Flow) Type",
     "shortDes": "A specialized ceiling-recessed unit with two-directional airflow for corridors and long rooms. This is a specialized Daikin product.",
@@ -92,6 +95,7 @@
     ]
   },
   {
+    "id": "4",
     "image": "https://i.imgur.com/MDeT6Mh.png",
     "productName": "Ceiling Mounted Duct Type",
     "shortDes": "A powerful, concealed unit with high static pressure for extensive ductwork in large zones. Verifiable products exist from Daikin and LG.",
@@ -125,6 +129,7 @@
     ]
   },
   {
+    "id": "5",
     "image": "https://i.imgur.com/jAnj41s.png",
     "productName": "Ceiling Suspended Type",
     "shortDes": "An indoor unit that mounts under the ceiling, ideal for spaces without ceiling voids like retail stores. Verifiable products exist from Daikin and LG.",
@@ -153,6 +158,7 @@
     ]
   },
   {
+    "id": "6",
     "image": "https://i.imgur.com/e4p3f2G.png",
     "productName": "Wall Mounted Type",
     "shortDes": "A common ductless indoor unit mounted high on a wall for residential or small office use. Verifiable products exist from Daikin and LG.",
@@ -184,6 +190,7 @@
     ]
   },
   {
+    "id": "7",
     "image": "https://i.imgur.com/J3tG2pW.png",
     "productName": "Air Handling Unit",
     "shortDes": "A large, customizable system for conditioning and circulating air in commercial buildings. This is a core commercial product for Daikin.",
@@ -205,6 +212,7 @@
     ]
   },
   {
+    "id": "8",
     "image": "https://i.imgur.com/MGB0lEV.png",
     "productName": "Floor Standing Type",
     "shortDes": "A powerful, vertical indoor unit that stands on the floor, ideal for large rooms with limited wall space. Verifiable products exist from Daikin and LG.",
@@ -235,6 +243,7 @@
     ]
   },
   {
+    "id": "9",
     "image": "https://i.imgur.com/8QW5Z3a.png",
     "productName": "Daikin VRV System",
     "shortDes": "A Variable Refrigerant Volume (VRV) system for commercial use, connecting multiple indoor units to a single, highly efficient outdoor unit.",
@@ -259,6 +268,7 @@
     ]
   },
   {
+    "id": "10",
     "image": "https://i.imgur.com/uGCRw5j.png",
     "productName": "LG MULTI V System",
     "shortDes": "A Variable Refrigerant Flow (VRF) system, LG's direct equivalent to VRV, providing zoned climate control for commercial buildings.",
@@ -284,6 +294,7 @@
     ]
   },
   {
+    "id": "11",
     "image": "https://i.imgur.com/jQ8fP0L.png",
     "productName": "Dunham-Bush Air-Cooled Screw Chiller",
     "shortDes": "A large-tonnage system that chills water using screw compressors, designed for major commercial and industrial applications.",

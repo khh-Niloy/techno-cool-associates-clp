@@ -2,7 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import { ModalButton } from "../ModalButton";
+// import { ModalButton } from "../ModalButton";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function AllProduct({ isHome }) {
   const [allProduct, setallProduct] = useState([]);
@@ -24,7 +26,10 @@ export default function AllProduct({ isHome }) {
   return (
     <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 w-[90%] lg:w-[100%] mx-auto">
       {prodArr.map(
-        ({ productName, shortDes, image, model, BrandedProduct }, index) => (
+        (
+          { productName, shortDes, image, model, BrandedProduct, id },
+          index
+        ) => (
           <div
             key={index}
             className={`rounded-2xl card card-compact bg-base-100 hover:scale-[1.03] duration-300 transition-all shadow-xl text-black`}
@@ -53,12 +58,15 @@ export default function AllProduct({ isHome }) {
               {/* <p className="text-sm">Origin: {e.model}</p> */}
               <p className="line-clamp-2 text-sm mt-2">{shortDes}</p>
               <div className=" text-white mt-3">
-                <ModalButton
+                {/* <ModalButton
                   image={image}
                   model={model}
                   BrandedProduct={BrandedProduct}
                   productName={productName}
-                />
+                /> */}
+                <Link href={`/products/${id}`}>
+                  <Button className="w-full">See More</Button>
+                </Link>
               </div>
             </div>
           </div>

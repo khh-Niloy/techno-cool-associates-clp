@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PageTransitionWrapper from "./components/Home/PageTransitionWrapper";
 import toast, { Toaster } from "react-hot-toast";
+import SmoothScrollWrapper from "./components/SmoothScrollWrapper";
 
 const inter = Inter({
   variable: "--font-inter",

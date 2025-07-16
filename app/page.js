@@ -2,6 +2,8 @@ import Banner from "./components/Home/Banner";
 import WhyChooseUs from "./components/Home/WhyChooseUs";
 import ClientSection3D from "./components/Home/ClientSection3D";
 import HomeProducts from "./components/Home/HomeProducts";
+import BannerSlider from "./components/Home/BannerSlider";
+import SmoothScrollWrapper from "./components/SmoothScrollWrapper";
 
 export const metadata = {
   title: "Home | HVAC Experts in Bangladesh - Techno Cool Associates",
@@ -76,10 +78,11 @@ export default function Home() {
       </head>
 
       <div className="bg-white text-black">
-        <Banner />
-        <main className="lg:w-[85%] w-[100%] mx-auto">
-          <WhyChooseUs />
-          <ClientSection3D />
+        {/* <Banner /> */}
+        <BannerSlider />
+        <WhyChooseUs />
+        <ClientSection3D />
+        <main className=" w-[100%] mx-auto">
           <HomeProducts />
         </main>
       </div>
